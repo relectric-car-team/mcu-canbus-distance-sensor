@@ -39,7 +39,7 @@ uint8_t isDistanceReady() {
         distanceReady = 0;              // Reset distanceReady since it will be read
         return 1;                       // Return true
     }
-    return 0                            // Return false
+    return 0;                           // Return false
 }
 
 double calculateDistance() {
