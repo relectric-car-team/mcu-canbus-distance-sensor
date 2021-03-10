@@ -63,6 +63,64 @@
 // TODO Insert declarations or function prototypes (right here) to leverage 
 // live documentation
 
+/**
+  @Summary
+    Sends a 10us pulse to the TRIG pin
+
+  @Description
+    This function sends a 10us pulse to the TRIG pin for the purposes of distance measurement.
+
+  @Preconditions
+    Initialize the TMR0 before calling this function.
+
+  @Param
+    None.
+
+  @Returns
+    None.
+*/
+void sendTrigger();
+
+/**
+  @Summary
+    Handles ECHO IOC events
+
+  @Description
+    This function handles IOC interrupts when the ECHO pin changes to high or low. Furthermore,
+    this function will stop and start the timers accordingly
+
+  @Preconditions
+    Initialize the TMR0 before calling this function and that sendTrigger has
+    been invoked.
+
+  @Param
+    None.
+
+  @Returns
+    None.
+*/
+void handleEcho();
+
+/**
+  @Summary
+    Calculates the distance from the stored timerTicks variable for the AJ-SR04M
+    distance sensor.
+
+  @Description
+    This function will calculate the distance given by the distance sensor using
+    the speed of sound.
+
+  @Preconditions
+    sendTrigger and handleEcho have already timed a ECHO pulse.
+
+  @Param
+    None.
+
+  @Returns
+    Double representing the distance in cm
+*/
+double calculateDistance()
+
 #ifdef	__cplusplus
 extern "C" {
 #endif /* __cplusplus */
