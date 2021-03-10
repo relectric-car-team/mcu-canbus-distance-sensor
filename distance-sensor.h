@@ -119,7 +119,25 @@ void handleEcho();
   @Returns
     Double representing the distance in cm
 */
-double calculateDistance()
+double calculateDistance();
+
+/**
+  @Summary
+    Checks if distance reading is ready
+
+  @Description
+    Checks if distance reading has been calculated through IOC.
+
+  @Preconditions
+    None.
+
+  @Param
+    None.
+
+  @Returns
+    Boolean representing if distance measurement is ready
+*/
+uint8_t isDistanceReady();
 
 #ifdef	__cplusplus
 extern "C" {

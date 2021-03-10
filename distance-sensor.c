@@ -13,6 +13,7 @@
 #include "mcc_generated_files/device_config.h"
 
 uint16_t timerTicks;
+uint8_t distanceReady = 0;
 
 void sendTrigger() {
     // Send 10us pulse to TRIG pin
@@ -28,7 +29,17 @@ void handleEcho() {
         TMR0_StopTimer();               // Stop timer
         timerTicks = TMR0_ReadTimer();  // Read timer into timerTicks
         TMR0_Reload();                  // Reload timer (set back to 0)
+        distanceReady = 1;              // Sets distance ready to true
+        __delay_us(5);                  // Wait 5us to allow distance sensor to reset
     }
+}
+
+uint8_t isDistanceReady() {
+    if (distanceReady) {                // Check if distance value has been updated
+        distanceReady = 0;              // Reset distanceReady since it will be read
+        return 1;                       // Return true
+    }
+    return 0                            // Return false
 }
 
 double calculateDistance() {
