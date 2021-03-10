@@ -24,7 +24,6 @@ void main(void)
 
     while (1)
     {
-        __delay_ms(1000);
-        printf("Hello\n\r");
+        
     }
 }

@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/can-base.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=can-base.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=can-base.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/canbus-mcu-distance-sensor.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=canbus-mcu-distance-sensor.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=canbus-mcu-distance-sensor.x/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/can-base.x/bin
+makeDirectory ${TMPDIR}/canbus-mcu-distance-sensor.x/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/can-base.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/canbus-mcu-distance-sensor.x.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/can-base.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/canbus-mcu-distance-sensor.x.tar *
 checkReturnCode
 
 # Cleanup
