@@ -113,45 +113,45 @@
 #define RB5_SetAnalogMode()         do { ANSELBbits.ANSELB5 = 1; } while(0)
 #define RB5_SetDigitalMode()        do { ANSELBbits.ANSELB5 = 0; } while(0)
 
-// get/set IO_RC4 aliases
-#define IO_RC4_TRIS                 TRISCbits.TRISC4
-#define IO_RC4_LAT                  LATCbits.LATC4
-#define IO_RC4_PORT                 PORTCbits.RC4
-#define IO_RC4_WPU                  WPUCbits.WPUC4
-#define IO_RC4_OD                   ODCONCbits.ODCC4
-#define IO_RC4_ANS                  ANSELCbits.ANSELC4
-#define IO_RC4_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
-#define IO_RC4_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
-#define IO_RC4_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
-#define IO_RC4_GetValue()           PORTCbits.RC4
-#define IO_RC4_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
-#define IO_RC4_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
-#define IO_RC4_SetPullup()          do { WPUCbits.WPUC4 = 1; } while(0)
-#define IO_RC4_ResetPullup()        do { WPUCbits.WPUC4 = 0; } while(0)
-#define IO_RC4_SetPushPull()        do { ODCONCbits.ODCC4 = 0; } while(0)
-#define IO_RC4_SetOpenDrain()       do { ODCONCbits.ODCC4 = 1; } while(0)
-#define IO_RC4_SetAnalogMode()      do { ANSELCbits.ANSELC4 = 1; } while(0)
-#define IO_RC4_SetDigitalMode()     do { ANSELCbits.ANSELC4 = 0; } while(0)
+// get/set TRIG aliases
+#define TRIG_TRIS                 TRISCbits.TRISC4
+#define TRIG_LAT                  LATCbits.LATC4
+#define TRIG_PORT                 PORTCbits.RC4
+#define TRIG_WPU                  WPUCbits.WPUC4
+#define TRIG_OD                   ODCONCbits.ODCC4
+#define TRIG_ANS                  ANSELCbits.ANSELC4
+#define TRIG_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
+#define TRIG_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
+#define TRIG_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
+#define TRIG_GetValue()           PORTCbits.RC4
+#define TRIG_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
+#define TRIG_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
+#define TRIG_SetPullup()          do { WPUCbits.WPUC4 = 1; } while(0)
+#define TRIG_ResetPullup()        do { WPUCbits.WPUC4 = 0; } while(0)
+#define TRIG_SetPushPull()        do { ODCONCbits.ODCC4 = 0; } while(0)
+#define TRIG_SetOpenDrain()       do { ODCONCbits.ODCC4 = 1; } while(0)
+#define TRIG_SetAnalogMode()      do { ANSELCbits.ANSELC4 = 1; } while(0)
+#define TRIG_SetDigitalMode()     do { ANSELCbits.ANSELC4 = 0; } while(0)
 
-// get/set IO_RC5 aliases
-#define IO_RC5_TRIS                 TRISCbits.TRISC5
-#define IO_RC5_LAT                  LATCbits.LATC5
-#define IO_RC5_PORT                 PORTCbits.RC5
-#define IO_RC5_WPU                  WPUCbits.WPUC5
-#define IO_RC5_OD                   ODCONCbits.ODCC5
-#define IO_RC5_ANS                  ANSELCbits.ANSELC5
-#define IO_RC5_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
-#define IO_RC5_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
-#define IO_RC5_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
-#define IO_RC5_GetValue()           PORTCbits.RC5
-#define IO_RC5_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
-#define IO_RC5_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
-#define IO_RC5_SetPullup()          do { WPUCbits.WPUC5 = 1; } while(0)
-#define IO_RC5_ResetPullup()        do { WPUCbits.WPUC5 = 0; } while(0)
-#define IO_RC5_SetPushPull()        do { ODCONCbits.ODCC5 = 0; } while(0)
-#define IO_RC5_SetOpenDrain()       do { ODCONCbits.ODCC5 = 1; } while(0)
-#define IO_RC5_SetAnalogMode()      do { ANSELCbits.ANSELC5 = 1; } while(0)
-#define IO_RC5_SetDigitalMode()     do { ANSELCbits.ANSELC5 = 0; } while(0)
+// get/set ECHO aliases
+#define ECHO_TRIS                 TRISCbits.TRISC5
+#define ECHO_LAT                  LATCbits.LATC5
+#define ECHO_PORT                 PORTCbits.RC5
+#define ECHO_WPU                  WPUCbits.WPUC5
+#define ECHO_OD                   ODCONCbits.ODCC5
+#define ECHO_ANS                  ANSELCbits.ANSELC5
+#define ECHO_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
+#define ECHO_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
+#define ECHO_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
+#define ECHO_GetValue()           PORTCbits.RC5
+#define ECHO_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
+#define ECHO_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
+#define ECHO_SetPullup()          do { WPUCbits.WPUC5 = 1; } while(0)
+#define ECHO_ResetPullup()        do { WPUCbits.WPUC5 = 0; } while(0)
+#define ECHO_SetPushPull()        do { ODCONCbits.ODCC5 = 0; } while(0)
+#define ECHO_SetOpenDrain()       do { ODCONCbits.ODCC5 = 1; } while(0)
+#define ECHO_SetAnalogMode()      do { ANSELCbits.ANSELC5 = 1; } while(0)
+#define ECHO_SetDigitalMode()     do { ANSELCbits.ANSELC5 = 0; } while(0)
 
 /**
    @Param
@@ -176,6 +176,90 @@ void PIN_MANAGER_Initialize (void);
     PIN_MANAGER_IOC();
  */
 void PIN_MANAGER_IOC(void);
+
+
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Interrupt on Change Handler for the IOCCF5 pin functionality
+ * @Example
+    IOCCF5_ISR();
+ */
+void IOCCF5_ISR(void);
+
+/**
+  @Summary
+    Interrupt Handler Setter for IOCCF5 pin interrupt-on-change functionality
+
+  @Description
+    Allows selecting an interrupt handler for IOCCF5 at application runtime
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    InterruptHandler function pointer.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCCF5_SetInterruptHandler(MyInterruptHandler);
+
+*/
+void IOCCF5_SetInterruptHandler(void (* InterruptHandler)(void));
+
+/**
+  @Summary
+    Dynamic Interrupt Handler for IOCCF5 pin
+
+  @Description
+    This is a dynamic interrupt handler to be used together with the IOCCF5_SetInterruptHandler() method.
+    This handler is called every time the IOCCF5 ISR is executed and allows any function to be registered at runtime.
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCCF5_SetInterruptHandler(IOCCF5_InterruptHandler);
+
+*/
+extern void (*IOCCF5_InterruptHandler)(void);
+
+/**
+  @Summary
+    Default Interrupt Handler for IOCCF5 pin
+
+  @Description
+    This is a predefined interrupt handler to be used together with the IOCCF5_SetInterruptHandler() method.
+    This handler is called every time the IOCCF5 ISR is executed. 
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCCF5_SetInterruptHandler(IOCCF5_DefaultInterruptHandler);
+
+*/
+void IOCCF5_DefaultInterruptHandler(void);
 
 
 
