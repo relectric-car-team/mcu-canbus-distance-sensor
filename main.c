@@ -21,7 +21,7 @@ void main(void)
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
-    
+
     // Set handleEcho as interrupt handler for ECHO pin IOC events
     IOCCF5_SetInterruptHandler(handleEcho);
 
@@ -30,7 +30,7 @@ void main(void)
         __delay_ms(1000);
         sendTrigger();
         if (isDistanceReady()) {
-            printf("Got Distance Reading: %d", calculateDistance());
+            printf("Got Distance Reading: %d\n\r", calculateDistance());
         }
     }
 }
