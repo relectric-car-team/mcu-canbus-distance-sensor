@@ -1,4 +1,4 @@
-# Microcontroller CANBUS Base
+# CANBUS-Enabled Backup Sensor (AJ-SR04M)
 
 This repository holds base code used for the distance sensor project. It will
 also create a CANBUS network using PIC MCUs and has builtin Serial UART
