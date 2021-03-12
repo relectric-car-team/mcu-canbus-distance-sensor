@@ -23,14 +23,14 @@ void sendTrigger() {
 }
 
 void handleEcho() {
-    if (TRIG_GetValue() == 1) {         // Rising edge of ECHO pin
+    if (ECHO_GetValue() == 1) {         // Rising edge of ECHO pin
         TMR0_StartTimer();              // Start timer
     } else {                            // Falling edge of ECHO pin
         TMR0_StopTimer();               // Stop timer
         timerTicks = TMR0_ReadTimer();  // Read timer into timerTicks
         TMR0_Reload();                  // Reload timer (set back to 0)
         distanceReady = 1;              // Sets distance ready to true
-        __delay_us(5);                  // Wait 5us to allow distance sensor to reset
+        __delay_us(2500);               // Wait 2.5ms to allow distance sensor to reset
     }
 }
 
