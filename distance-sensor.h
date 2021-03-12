@@ -119,7 +119,7 @@ void handleEcho();
   @Returns
     Double representing the distance in cm
 */
-double calculateDistance();
+float calculateDistance();
 
 /**
   @Summary
@@ -138,6 +138,42 @@ double calculateDistance();
     Boolean representing if distance measurement is ready
 */
 uint8_t isDistanceReady();
+
+/**
+ * @Summary
+ *  Checks if the error flag on the timer has been set
+ * 
+ * @Description
+ *  Checks if the TMR0 timer has overflowed, resulting in possible bad data
+ * 
+ * @Preconditions
+ *  None.
+ * 
+ * @Param
+ *  None.
+ * 
+ * @Returns
+ *  Boolean representing if error has occurred
+ */
+uint8_t hasDistanceErrorOccured();
+
+/**
+ * @Summary
+ *  Gets total timer ticks of TMR0
+ * 
+ * @Description
+ *  Gets stored value for total number of timer ticks
+ * 
+ * @Preconditions
+ *  None.
+ * 
+ * @Param
+ *  None.
+ * 
+ * @Returns
+ *  16-bit wide integer representing total timer ticks
+ */
+uint16_t getTimerTicks();
 
 #ifdef	__cplusplus
 extern "C" {

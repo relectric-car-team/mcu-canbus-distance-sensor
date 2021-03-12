@@ -27,10 +27,11 @@ void main(void)
 
     while (1)
     {
-        __delay_ms(1000);
+        __delay_ms(250);
         sendTrigger();
         if (isDistanceReady()) {
-            printf("Got Distance Reading: %d\n\r", calculateDistance());
+            if (hasDistanceErrorOccured()) printf("POSSIBLE TMR0 OVERFLOW: ");
+            printf("Got Distance Reading: %f, Timer Ticks: %u\n\r", calculateDistance(), getTimerTicks());
         }
     }
 }

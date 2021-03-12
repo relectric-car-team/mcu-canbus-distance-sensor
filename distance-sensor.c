@@ -14,7 +14,8 @@
 
 uint16_t timerTicks;
 uint8_t distanceReady = 0;
-
+uint8_t distanceError = 0;
+        
 void sendTrigger() {
     // Send 10us pulse to TRIG pin
     TRIG_SetHigh();         // Set TRIG pin high
@@ -23,26 +24,39 @@ void sendTrigger() {
 }
 
 void handleEcho() {
-    if (ECHO_GetValue() == 1) {         // Rising edge of ECHO pin
-        TMR0_StartTimer();              // Start timer
-    } else {                            // Falling edge of ECHO pin
-        TMR0_StopTimer();               // Stop timer
-        timerTicks = TMR0_ReadTimer();  // Read timer into timerTicks
-        TMR0_Reload();                  // Reload timer (set back to 0)
-        distanceReady = 1;              // Sets distance ready to true
-        __delay_us(2500);               // Wait 2.5ms to allow distance sensor to reset
+    if (ECHO_GetValue() == 1) {                     // Rising edge of ECHO pin
+        TMR0_StartTimer();                          // Start timer
+    } else {                                        // Falling edge of ECHO pin
+        TMR0_StopTimer();                           // Stop timer
+        timerTicks = TMR0_ReadTimer();              // Read timer into timerTicks
+        distanceError = TMR0_HasOverflowOccured();  // Check if overflow has occured and store in flag
+        TMR0_Reload();                              // Reload timer (set back to 0)
+        distanceReady = 1;                          // Sets distance ready to true
+        __delay_ms(5);                              // Wait 5ms to allow distance sensor to reset
     }
 }
 
 uint8_t isDistanceReady() {
-    if (distanceReady) {                // Check if distance value has been updated
-        distanceReady = 0;              // Reset distanceReady since it will be read
-        return 1;                       // Return true
+    if (distanceReady) {                            // Check if distance value has been updated
+        distanceReady = 0;                          // Reset distanceReady since it will be read
+        return 1;                                   // Return true
     }
-    return 0;                           // Return false
+    return 0;                                       // Return false
 }
 
-double calculateDistance() {
-    // clockTicks / clockFrequency(64MHz) * speed of sound(cm/us) / 2(account for twice distance)
-    return timerTicks / _XTAL_FREQ * 0.0343 / 2;
+uint8_t hasDistanceErrorOccured() {
+    if (distanceError) {                            // Check if error flag has been set
+        distanceError = 0;                          // Reset distanceError since it will be read
+        return 1;                                   // Return true
+    }
+    return 0;                                       // Return false
+}
+
+uint16_t getTimerTicks() {
+    return timerTicks;                              // Returns current timer ticks
+}
+
+float calculateDistance() {
+    // clockTicks / 2(account for twice distance) * speed of sound(m/s) / clockFrequency(500kHz)
+    return timerTicks / 2.0 * 343 / 500000;
 }
