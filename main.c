@@ -15,6 +15,12 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
+    int window = 10;
+    int index = 0;
+    float value = 0;
+    float sum = 0;
+    float readings[window];
+    float averaged = 0;
 
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
@@ -31,7 +37,13 @@ void main(void)
         sendTrigger();
         if (isDistanceReady()) {
             if (hasDistanceErrorOccured()) printf("POSSIBLE TMR0 OVERFLOW: ");
-            printf("Got Distance Reading: %f, Timer Ticks: %u\n\r", calculateDistance(), getTimerTicks());
+            sum = sum = readings[index];
+            value = calculateDistance();
+            readings[index] = value;
+            sum = sum + value;
+            index = (index + 1) % window;
+            averaged = sum / window;
+            printf("Got Distance Reading: %f, Timer Ticks: %u\n\r", calculateDistance(), getTimerTicks()); // Can I change calculateDistance() to averaged?
         }
     }
 }
