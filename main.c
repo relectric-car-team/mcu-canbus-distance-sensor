@@ -27,7 +27,8 @@ void main(void)
 
     while (1)
     {
-        __delay_ms(250);
+        //delay is set to 62.5ms so the sensor can accurately update distance every second i.e. 1000/16 <-- 256/16
+        __delay_ms(62.5);
         sendTrigger();
         if (isDistanceReady()) {
             if (hasDistanceErrorOccured()) printf("POSSIBLE TMR0 OVERFLOW: ");

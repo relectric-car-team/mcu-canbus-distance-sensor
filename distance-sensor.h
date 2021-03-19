@@ -103,11 +103,15 @@ void handleEcho();
 
 /**
   @Summary
-    Calculates the distance from the stored timerTicks variable for the AJ-SR04M
-    distance sensor.
+    Updates distance[256] array with timerTicks and calculates their average 
+    value. Calculates the distance from the stored average variable for the 
+    AJ-SR04M distance sensor.
 
   @Description
-    This function will calculate the distance given by the distance sensor using
+    This function will store timerTicks within distance[256] array and use 
+    stored timerTicks to calculate their average. Every call to 
+    calculateDistance will update distance[] 16 times and calculate distance 
+    given the updated average value, clock frequency, and speed of sound
     the speed of sound.
 
   @Preconditions

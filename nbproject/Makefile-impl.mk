@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=canbus-mcu-distance-sensor.X
+PROJECTNAME=canbus-mcu-distance-sensor
 
 # Active Configuration
 DEFAULTCONF=default
