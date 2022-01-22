@@ -63,6 +63,11 @@ typedef enum
     TXQ = 0
 } CAN1_TX_FIFO_CHANNELS;
 
+typedef enum
+{
+    FIFO1 = 1,
+    FIFO2 = 2
+} CAN1_RX_FIFO_CHANNELS;
 
 /**
   Section: CAN Module APIs
@@ -128,7 +133,7 @@ void CAN1_Initialize(void);
 
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 //User Application code
             }
@@ -166,7 +171,7 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
             
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 //User Application code
             }
@@ -209,7 +214,7 @@ CAN_OP_MODES CAN1_OperationModeGet(void);
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 while(1) 
                 {
@@ -229,6 +234,46 @@ CAN_OP_MODES CAN1_OperationModeGet(void);
     </code>
 */
 bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
+
+/**
+  @Summary
+    Reads the message object from the specified CAN receive FIFO.
+
+  @Description
+    This routine reads a message object from the specified CAN receive FIFO.
+
+  @Preconditions
+    CAN1_Initialize() function should be called before calling this function. 
+
+  @Param
+    fifoChannel - CAN RX FIFO channel
+    rxCanMsg    - pointer to the message object
+
+  @Returns
+    true        - Receive successful
+    false       - Receive failure
+
+  @Example
+    <code>
+    volatile CAN_MSG_OBJ gMsg;
+    
+    void CustomFIFO1Handler(void)
+    {
+        CAN1_ReceiveFrom(FIFO1, &gMsg));
+    }
+
+    void main(void)
+    {
+        SYSTEM_Initialize();
+        CAN1_SetFIFO1FullHandler(&CustomFIFO1Handler);
+        
+        INTERRUPT_GlobalInterruptEnable();
+
+        while(1);
+    }
+    </code>
+*/
+bool CAN1_ReceiveFrom(const CAN1_RX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *rxCanMsg);
 
 /**
   @Summary
@@ -266,7 +311,7 @@ bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 msg.msgId = 0x1FFFF;
                 msg.field.formatType = CAN_FD_FORMAT;
@@ -319,7 +364,7 @@ CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel,
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 msg.msgId = 0x1FFFF;
                 msg.field.formatType = CAN_FD_FORMAT;
@@ -377,7 +422,7 @@ bool CAN1_IsBusOff(void);
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 msg.msgId = 0x1FFFF;
                 msg.field.formatType = CAN_FD_FORMAT;
@@ -436,7 +481,7 @@ bool CAN1_IsTxErrorPassive(void);
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 msg.msgId = 0x1FFFF;
                 msg.field.formatType = CAN_FD_FORMAT;
@@ -495,7 +540,7 @@ bool CAN1_IsTxErrorWarning(void);
 
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 msg.msgId = 0x1FFFF;
                 msg.field.formatType = CAN_FD_FORMAT;
@@ -550,7 +595,7 @@ bool CAN1_IsTxErrorActive(void);
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 while(1) 
                 {
@@ -598,7 +643,7 @@ bool CAN1_IsRxErrorPassive(void);
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 while(1) 
                 {
@@ -646,7 +691,7 @@ bool CAN1_IsRxErrorWarning(void);
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 while(1) 
                 {
@@ -689,7 +734,7 @@ bool CAN1_IsRxErrorActive(void);
         
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 CAN1_Sleep();
                 
@@ -701,7 +746,7 @@ bool CAN1_IsRxErrorActive(void);
                     // Recover to Normal mode
                     if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
                     {
-                        if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+                        if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
                         {
                             //User Application code                            
                         }
@@ -747,7 +792,7 @@ void CAN1_Sleep(void);
 
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {    
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 msg.msgId = 0x1FFFF;
                 msg.field.formatType = CAN_FD_FORMAT;
@@ -796,7 +841,7 @@ CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoCh
 
         if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
         {
-            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
+            if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_FD_MODE))
             {
                 while(1) 
                 {
@@ -814,10 +859,10 @@ uint8_t CAN1_ReceivedMessageCountGet(void);
 
 /**
   @Summary
-    Sets the Disable RX FIFO Interrupt interrupt handler.
+    Sets the RX FIFO Not Empty interrupt handler.
 
   @Description
-    This routine sets the Disable RX FIFO Interrupt interrupt handler for FIFO1.
+    This routine sets the RX FIFO Not Empty interrupt handler for FIFO1.
 
   @Param
     Address of the callback routine.
@@ -837,7 +882,7 @@ uint8_t CAN1_ReceivedMessageCountGet(void);
     void main(void)
     {
         SYSTEM_Initialize();
-        CAN1_SetFIFO1nullHandler(&CustomFIFO1Handler);
+        CAN1_SetFIFO1NotEmptyHandler(&CustomFIFO1Handler);
         
         INTERRUPT_GlobalInterruptEnable();
 
@@ -845,7 +890,42 @@ uint8_t CAN1_ReceivedMessageCountGet(void);
     }
     </code>
 */
-void CAN1_SetFIFO1nullHandler(void (*handler)(void));
+void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void));
+
+/**
+  @Summary
+    Sets the RX FIFO Not Empty interrupt handler.
+
+  @Description
+    This routine sets the RX FIFO Not Empty interrupt handler for FIFO2.
+
+  @Param
+    Address of the callback routine.
+
+  @Returns
+    None
+ 
+  @Example
+    <code>
+    volatile CAN_MSG_OBJ gMsg;
+    
+    void CustomFIFO2Handler(void)
+    {
+        CAN1_ReceiveFrom(FIFO2, &gMsg);
+    }
+
+    void main(void)
+    {
+        SYSTEM_Initialize();
+        CAN1_SetFIFO2NotEmptyHandler(&CustomFIFO2Handler);
+        
+        INTERRUPT_GlobalInterruptEnable();
+
+        while(1);
+    }
+    </code>
+*/
+void CAN1_SetFIFO2NotEmptyHandler(void (*handler)(void));
 
 /**
   @Summary
@@ -892,5 +972,6 @@ void CAN1_SetFIFO1nullHandler(void (*handler)(void));
 void CAN1_SetTXQnullHandler(void (*handler)(void));
 
 
+void CAN1_RXI_ISR(void);
 
 #endif  //CAN1_H

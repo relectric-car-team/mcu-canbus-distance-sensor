@@ -685,6 +685,8 @@
         <property key="memories.programmemory.ranges" value="0-1ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="/Users/etiennel/Documents/Relectric Car Team/mcu-canbus-distance-sensor/debug/default/can-base_ptg"/>
         <property key="programmerToGoImageName" value="can-base_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>

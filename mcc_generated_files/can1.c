@@ -49,8 +49,8 @@
 #include <string.h>
 #include "can1.h"
 
-#define RX_FIFO_MSG_DATA                (8U)
-#define NUM_OF_RX_FIFO                  (1U)
+#define RX_FIFO_MSG_DATA                (32U)
+#define NUM_OF_RX_FIFO                  (2U)
 
 #define SID_LOW_WIDTH                   (8U)
 #define SID_HIGH_MASK                   (0x07U)
@@ -88,10 +88,6 @@ typedef enum
     CAN_RX_MSG_OVERFLOW = 8U
 } CAN_RX_FIFO_STATUS;
 
-typedef enum
-{
-    FIFO1 = 1
-} CAN1_RX_FIFO_CHANNELS;
 
 struct CAN1_RX_FIFO
 {
@@ -100,16 +96,57 @@ struct CAN1_RX_FIFO
 };
 
 //CAN RX FIFO Message object data field 
-static uint8_t rxMsgData[RX_FIFO_MSG_DATA];
+static volatile uint8_t rxMsgData[RX_FIFO_MSG_DATA];
 
 static struct CAN1_RX_FIFO rxFifos[] = 
 {
-    {FIFO1, 0u}
+    {FIFO1, 0u},
+    {FIFO2, 0u}
 };
 
 static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
-static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U};
+static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U, 12U, 16U, 20U, 24U, 32U, 48U, 64U};
 
+static void (*CAN1_FIFO1NotEmptyHandler)(void);
+static void (*CAN1_FIFO2NotEmptyHandler)(void);
+
+static void DefaultFIFO1NotEmptyHandler(void)
+{
+    CAN_MSG_OBJ EchoMessage;  //create a message object for holding the data
+    while(1)
+    {
+        if(CAN1_ReceivedMessageCountGet() > 0) //check for received message
+        {
+            if(true == CAN1_Receive(&EchoMessage)) //receive the message
+            {
+                break;
+            }
+        }
+    }
+    EchoMessage.msgId=0x222; //Change the ID to 0x222 then echo the message back out
+if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
+    {
+        CAN1_Transmit(TXQ, &EchoMessage); //Send the message
+    }
+}
+
+static void DefaultFIFO2NotEmptyHandler(void)
+{
+    CAN_MSG_OBJ InternalMessage; //create a message object for holding data
+    uint8_t DataIndex=0;  //placeholder variable for calculations
+    while(1)
+    {
+        if(CAN1_ReceivedMessageCountGet() > 0) //check for received message
+        {
+            if(true == CAN1_Receive(&InternalMessage)) //receive the message
+            {
+                break;
+            }
+        }
+    }
+    DataIndex=InternalMessage.data[0]/32; //calculate which data byte to use
+    LATA=InternalMessage.data[DataIndex]; //output the data byte to the LEDs
+}
 
 void CAN1_RX_FIFO_ResetInfo(void)
 {
@@ -123,8 +160,8 @@ void CAN1_RX_FIFO_ResetInfo(void)
 
 static void CAN1_RX_FIFO_Configuration(void)
 {
-    // TXEN disabled; RTREN disabled; RXTSEN disabled; TXATIE disabled; RXOVIE disabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE disabled; 
-    C1FIFOCON1L = 0x00;
+    // TXEN disabled; RTREN disabled; RXTSEN disabled; TXATIE disabled; RXOVIE disabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE enabled; 
+    C1FIFOCON1L = 0x01;
     
     // FRESET enabled; TXREQ disabled; UINC disabled; 
     C1FIFOCON1H = 0x04;
@@ -132,13 +169,54 @@ static void CAN1_RX_FIFO_Configuration(void)
     // TXAT Unlimited number of retransmission attempts; TXPRI 1; 
     C1FIFOCON1U = 0x60;
     
-    // PLSIZE 8; FSIZE 6; 
-    C1FIFOCON1T = 0x05;
+    // PLSIZE 32; FSIZE 6; 
+    C1FIFOCON1T = 0xA5;
     
+    // TXEN disabled; RTREN disabled; RXTSEN disabled; TXATIE disabled; RXOVIE disabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE enabled; 
+    C1FIFOCON2L = 0x01;
+    
+    // FRESET enabled; TXREQ disabled; UINC disabled; 
+    C1FIFOCON2H = 0x04;
+    
+    // TXAT Unlimited number of retransmission attempts; TXPRI 1; 
+    C1FIFOCON2U = 0x60;
+    
+    // PLSIZE 32; FSIZE 6; 
+    C1FIFOCON2T = 0xA5;
+    
+    CAN1_SetFIFO1NotEmptyHandler(DefaultFIFO1NotEmptyHandler);
+    CAN1_SetFIFO2NotEmptyHandler(DefaultFIFO2NotEmptyHandler);
+    
+    C1INTUbits.RXIE = 1;
+    
+    PIR4bits.CANRXIF = 0;
+    PIE4bits.CANRXIE = 1;
 }
 
 static void CAN1_RX_FIFO_FilterMaskConfiguration(void)
 {
+    // FLTEN0 enabled; F0BP FIFO 1; 
+    C1FLTOBJ0L = 0x11;
+    C1FLTOBJ0H = 0x01;
+    C1FLTOBJ0U = 0x00;
+    C1FLTOBJ0T = 0x00;
+    C1MASK0L = 0xFF;
+    C1MASK0H = 0x07;
+    C1MASK0U = 0x00;
+    C1MASK0T = 0x40;
+    C1FLTCON0L = 0x81; 
+    
+    // FLTEN1 enabled; F1BP FIFO 2; 
+    C1FLTOBJ1L = 0x85;
+    C1FLTOBJ1H = 0xAD;
+    C1FLTOBJ1U = 0x03;
+    C1FLTOBJ1T = 0x00;
+    C1MASK1L = 0xFF;
+    C1MASK1H = 0x2F;
+    C1MASK1U = 0x80;
+    C1MASK1T = 0x53;
+    C1FLTCON0H = 0x82; 
+    
 }
 
 static void CAN1_TX_FIFO_Configuration(void)
@@ -152,25 +230,42 @@ static void CAN1_TX_FIFO_Configuration(void)
     // TXAT 3; TXPRI 1; 
     C1TXQCONU = 0x60;
     
-    // PLSIZE 8; FSIZE 6; 
-    C1TXQCONT = 0x05;
+    // PLSIZE 32; FSIZE 6; 
+    C1TXQCONT = 0xA5;
     
 }
 
 static void CAN1_BitRateConfiguration(void)
 {
-    // SJW 31; 
-    C1NBTCFGL = 0x1F;
+    // SJW 15; 
+    C1NBTCFGL = 0x0F;
     
-    // TSEG2 31; 
-    C1NBTCFGH = 0x1F;
+    // TSEG2 15; 
+    C1NBTCFGH = 0x0F;
     
-    // TSEG1 94; 
-    C1NBTCFGU = 0x5E;
+    // TSEG1 46; 
+    C1NBTCFGU = 0x2E;
     
     // BRP 0; 
     C1NBTCFGT = 0x00;
     
+    // SJW 3; 
+    C1DBTCFGL = 0x03;
+    
+    // TSEG2 3; 
+    C1DBTCFGH = 0x03;
+    
+    // TSEG1 10; 
+    C1DBTCFGU = 0x0A;
+    
+    // BRP 0; 
+    C1DBTCFGT = 0x00;
+    
+    // TDCO 11; 
+    C1TDCH = 0x0B;
+    
+    // TDCMOD Auto; 
+    C1TDCU = 0x02;
 }
 
 
@@ -187,8 +282,8 @@ void CAN1_Initialize(void)
         // CLKSEL0 disabled; PXEDIS enabled; ISOCRCEN enabled; DNCNT 0; 
         C1CONL = 0x60;
 
-        // ON enabled; FRZ disabled; SIDL disabled; BRSDIS enabled; WFT T11 Filter; WAKFIL enabled; 
-        C1CONH = 0x97;
+        // ON enabled; FRZ disabled; SIDL disabled; BRSDIS disabled; WFT T11 Filter; WAKFIL enabled; 
+        C1CONH = 0x87;
 
         // TXQEN enabled; STEF disabled; SERR2LOM disabled; ESIGM disabled; RTXAT disabled; 
         C1CONU = 0x10;
@@ -198,7 +293,7 @@ void CAN1_Initialize(void)
         CAN1_RX_FIFO_Configuration();
         CAN1_RX_FIFO_FilterMaskConfiguration();
         CAN1_RX_FIFO_ResetInfo();
-        CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);    
+        CAN1_OperationModeSet(CAN_NORMAL_FD_MODE);    
     }
 }
 
@@ -280,6 +375,38 @@ static void ReadMessageFromFifo(uint8_t *rxFifoObj, CAN_MSG_OBJ *rxCanMsg)
     rxCanMsg->data = rxMsgData;
 }
 
+static bool Receive(uint8_t index, CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
+{
+    bool status = false;
+    CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
+
+    if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
+    {
+        uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
+
+        if (rxFifoObj != NULL)
+        {
+            ReadMessageFromFifo(rxFifoObj, rxCanMsg);
+            FIFO[channel].CONH |= _C1FIFOCON1H_UINC_MASK;
+
+            rxFifos[index].fifoHead += 1;
+            if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
+            {
+                rxFifos[index].fifoHead = 0;
+            }
+
+            if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
+            {
+                FIFO[channel].STAL &= ~_C1FIFOSTA1L_RXOVIF_MASK;
+            }
+
+            status = true;
+        }
+    }
+    
+    return status;
+}
+
 bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
 {
     uint8_t index;
@@ -287,35 +414,31 @@ bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
     
     for (index = 0; index < NUM_OF_RX_FIFO; index++)
     {
-        CAN1_RX_FIFO_CHANNELS channel = rxFifos[index].channel;
-        CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
-
-        if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
+        status = Receive(index, rxFifos[index].channel, rxCanMsg);
+        
+        if (status)
         {
-            uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
-            
-            if (rxFifoObj != NULL)
-            {
-                ReadMessageFromFifo(rxFifoObj, rxCanMsg);
-                FIFO[channel].CONH |= _C1FIFOCON1H_UINC_MASK;
-                
-                rxFifos[index].fifoHead += 1;
-                if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
-                {
-                    rxFifos[index].fifoHead = 0;
-                }
-
-                if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
-                {
-                    FIFO[channel].STAL &= ~_C1FIFOSTA1L_RXOVIF_MASK;
-                }
-
-                status = true;
-            }
-
             break;
         }
     }
+    
+    return status;
+}
+
+bool CAN1_ReceiveFrom(const CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
+{
+    uint8_t index;
+    bool status = false;
+    
+    for (index = 0; index < NUM_OF_RX_FIFO; index++)
+    {
+        if (channel == rxFifos[index].channel)
+        {
+            status = Receive(index, channel, rxCanMsg);
+            break;
+        }
+    }
+    
     return status;
 }
 
@@ -417,9 +540,9 @@ static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_
 {
     CAN_TX_MSG_REQUEST_STATUS txMsgStatus = CAN_TX_MSG_REQUEST_SUCCESS;
     CAN_MSG_FIELD field = txCanMsg->field;
-    uint8_t plsize = 0;
+    uint8_t plsize = (FIFO[validChannel].CONT & _C1FIFOCON1T_PLSIZE_MASK) >> _C1FIFOCON1T_PLSIZE_POSN;
     
-    if (CAN_BRS_MODE == field.brs && (CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
+    if (CAN_BRS_MODE == field.brs && (1 == C1CONHbits.BRSDIS || CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
     {
         txMsgStatus |= CAN_TX_MSG_REQUEST_BRS_ERROR;
     }
@@ -520,5 +643,30 @@ void CAN1_Sleep(void)
 }
 
 
+void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void))
+{
+    CAN1_FIFO1NotEmptyHandler = handler;
+}
 
+void CAN1_SetFIFO2NotEmptyHandler(void (*handler)(void))
+{
+    CAN1_FIFO2NotEmptyHandler = handler;
+}
+
+
+void CAN1_RXI_ISR(void)
+{
+    if (1 == C1FIFOSTA1Lbits.TFNRFNIF)
+    {
+        CAN1_FIFO1NotEmptyHandler();
+        // flag readonly
+    }
+    
+    if (1 == C1FIFOSTA2Lbits.TFNRFNIF)
+    {
+        CAN1_FIFO2NotEmptyHandler();
+        // flag readonly
+    }
+    
+}
 

@@ -16,7 +16,7 @@ uint16_t timerTicks;
 uint8_t distanceReady = 0;
 uint8_t distanceError = 0;
 float average;
-float distance[256];
+float distance[16];
 int counter = 0;
 int toggle = 1;
         
@@ -61,21 +61,20 @@ uint16_t getTimerTicks() {
 }
 
 float calculateDistance() {
-    if (counter == 256) {                           // Sets counter to zero when distance[] overflows]
+    if (counter >= 16) {                           // Sets counter to zero when distance[] overflows]
         counter = 0;
         toggle = 0;                                 // Ensures average is divided by 256 with array is full
     }
-    for (int i = 0; i < 16; i++) {                  // Will update distance[] 16 times before average is returned
-        average -= distance[counter];               // Delete current timerTick from average
-        distance[counter] = timerTicks;             // Update distance[]
-        average += distance[counter];               // Add current timerTick to average
-        counter++;                                  // Increment counter
-    }
+    
+    average -= distance[counter];               // Delete current timerTick from average
+    distance[counter] = timerTicks;             // Update distance[]
+    average += distance[counter];               // Add current timerTick to average
+    counter++;                                  // Increment counter
 
     // clockTicks / number of slots filled in distance[] / 2(account for twice distance) * speed of sound(m/s) / clockFrequency(500kHz)
     if (toggle) {
         return average / counter / 2.0 * 343 / 500000;
     } else {
-        return average / 256 / 2.0 * 343 / 500000;
+        return average / 16 / 2.0 * 343 / 500000;
     }
 }
