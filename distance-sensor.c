@@ -10,6 +10,7 @@
 
 #include "mcc_generated_files/pin_manager.h"
 #include "mcc_generated_files/tmr0.h"
+#include "mcc_generated_files/tmr2.h"
 #include "mcc_generated_files/device_config.h"
 
 uint16_t timerTicks;
@@ -29,12 +30,13 @@ void sendTrigger() {
 
 void handleEcho() {
     if (ECHO_GetValue() == 1) {                     // Rising edge of ECHO pin
-        TMR0_StartTimer();                          // Start timer
+        TMR2_StartTimer();                          // Start timer
     } else {                                        // Falling edge of ECHO pin
-        TMR0_StopTimer();                           // Stop timer
-        timerTicks = TMR0_ReadTimer();              // Read timer into timerTicks
-        distanceError = TMR0_HasOverflowOccured();  // Check if overflow has occured and store in flag
-        TMR0_Reload();                              // Reload timer (set back to 0)
+        TMR2_StopTimer();                           // Stop timer
+        timerTicks = TMR2_ReadTimer();              // Read timer into timerTicks
+        distanceError = TMR2_HasOverflowOccured();  // Check if overflow has occured and store in flag
+        TMR2_WriteTimer(0);
+        // TMR0_Reload();                              // Reload timer (set back to 0)
         distanceReady = 1;                          // Sets distance ready to true
         __delay_ms(5);                              // Wait 5ms to allow distance sensor to reset
     }
@@ -74,8 +76,8 @@ float calculateDistance() {
 
     // clockTicks / number of slots filled in distance[] / 2(account for twice distance) * speed of sound(m/s) / clockFrequency(500kHz)
     if (toggle) {
-        return average / counter / 2.0 * 343 / 500000;
+        return average*4 / counter / 2.0 * 343 / 31000;
     } else {
-        return average / 256 / 2.0 * 343 / 500000;
+        return average*4 / 256 / 2.0 * 343 / 31000;
     }
 }

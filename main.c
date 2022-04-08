@@ -24,6 +24,8 @@ void main(void)
 
     // Set handleEcho as interrupt handler for ECHO pin IOC events
     IOCCF5_SetInterruptHandler(handleEcho);
+    IOCCF1_SetInterruptHandler(handleEcho);
+    
 
     while (1)
     {
