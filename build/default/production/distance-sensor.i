@@ -37466,25 +37466,33 @@ unsigned char __t3rd16on(void);
 
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 182 "./mcc_generated_files/pin_manager.h"
+# 246 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 194 "./mcc_generated_files/pin_manager.h"
+# 258 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 207 "./mcc_generated_files/pin_manager.h"
+# 271 "./mcc_generated_files/pin_manager.h"
 void IOCCF1_ISR(void);
-# 230 "./mcc_generated_files/pin_manager.h"
+# 294 "./mcc_generated_files/pin_manager.h"
 void IOCCF1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 254 "./mcc_generated_files/pin_manager.h"
+# 318 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCCF1_InterruptHandler)(void);
-# 278 "./mcc_generated_files/pin_manager.h"
+# 342 "./mcc_generated_files/pin_manager.h"
 void IOCCF1_DefaultInterruptHandler(void);
-# 291 "./mcc_generated_files/pin_manager.h"
+# 355 "./mcc_generated_files/pin_manager.h"
+void IOCCF3_ISR(void);
+# 378 "./mcc_generated_files/pin_manager.h"
+void IOCCF3_SetInterruptHandler(void (* InterruptHandler)(void));
+# 402 "./mcc_generated_files/pin_manager.h"
+extern void (*IOCCF3_InterruptHandler)(void);
+# 426 "./mcc_generated_files/pin_manager.h"
+void IOCCF3_DefaultInterruptHandler(void);
+# 439 "./mcc_generated_files/pin_manager.h"
 void IOCCF5_ISR(void);
-# 314 "./mcc_generated_files/pin_manager.h"
+# 462 "./mcc_generated_files/pin_manager.h"
 void IOCCF5_SetInterruptHandler(void (* InterruptHandler)(void));
-# 338 "./mcc_generated_files/pin_manager.h"
+# 486 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCCF5_InterruptHandler)(void);
-# 362 "./mcc_generated_files/pin_manager.h"
+# 510 "./mcc_generated_files/pin_manager.h"
 void IOCCF5_DefaultInterruptHandler(void);
 # 11 "distance-sensor.c" 2
 

@@ -37458,25 +37458,33 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "/Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/xc.h" 2 3
 # 54 "mcc_generated_files/pin_manager.h" 2
-# 182 "mcc_generated_files/pin_manager.h"
+# 246 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 194 "mcc_generated_files/pin_manager.h"
+# 258 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 207 "mcc_generated_files/pin_manager.h"
+# 271 "mcc_generated_files/pin_manager.h"
 void IOCCF1_ISR(void);
-# 230 "mcc_generated_files/pin_manager.h"
+# 294 "mcc_generated_files/pin_manager.h"
 void IOCCF1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 254 "mcc_generated_files/pin_manager.h"
+# 318 "mcc_generated_files/pin_manager.h"
 extern void (*IOCCF1_InterruptHandler)(void);
-# 278 "mcc_generated_files/pin_manager.h"
+# 342 "mcc_generated_files/pin_manager.h"
 void IOCCF1_DefaultInterruptHandler(void);
-# 291 "mcc_generated_files/pin_manager.h"
+# 355 "mcc_generated_files/pin_manager.h"
+void IOCCF3_ISR(void);
+# 378 "mcc_generated_files/pin_manager.h"
+void IOCCF3_SetInterruptHandler(void (* InterruptHandler)(void));
+# 402 "mcc_generated_files/pin_manager.h"
+extern void (*IOCCF3_InterruptHandler)(void);
+# 426 "mcc_generated_files/pin_manager.h"
+void IOCCF3_DefaultInterruptHandler(void);
+# 439 "mcc_generated_files/pin_manager.h"
 void IOCCF5_ISR(void);
-# 314 "mcc_generated_files/pin_manager.h"
+# 462 "mcc_generated_files/pin_manager.h"
 void IOCCF5_SetInterruptHandler(void (* InterruptHandler)(void));
-# 338 "mcc_generated_files/pin_manager.h"
+# 486 "mcc_generated_files/pin_manager.h"
 extern void (*IOCCF5_InterruptHandler)(void);
-# 362 "mcc_generated_files/pin_manager.h"
+# 510 "mcc_generated_files/pin_manager.h"
 void IOCCF5_DefaultInterruptHandler(void);
 # 49 "mcc_generated_files/pin_manager.c" 2
 
@@ -37485,6 +37493,7 @@ void IOCCF5_DefaultInterruptHandler(void);
 
 
 void (*IOCCF1_InterruptHandler)(void);
+void (*IOCCF3_InterruptHandler)(void);
 void (*IOCCF5_InterruptHandler)(void);
 
 
@@ -37502,14 +37511,14 @@ void PIN_MANAGER_Initialize(void)
 
     TRISE = 0x08;
     TRISA = 0xFF;
-    TRISB = 0xFD;
-    TRISC = 0xEE;
+    TRISB = 0xED;
+    TRISC = 0xEA;
 
 
 
 
-    ANSELC = 0xCC;
-    ANSELB = 0xEC;
+    ANSELC = 0xC0;
+    ANSELB = 0xCC;
     ANSELA = 0xFE;
 
 
@@ -37549,13 +37558,19 @@ void PIN_MANAGER_Initialize(void)
 
     IOCCFbits.IOCCF1 = 0;
 
+    IOCCFbits.IOCCF3 = 0;
+
     IOCCFbits.IOCCF5 = 0;
 
     IOCCNbits.IOCCN1 = 1;
 
+    IOCCNbits.IOCCN3 = 1;
+
     IOCCNbits.IOCCN5 = 1;
 
     IOCCPbits.IOCCP1 = 1;
+
+    IOCCPbits.IOCCP3 = 1;
 
     IOCCPbits.IOCCP5 = 1;
 
@@ -37563,6 +37578,7 @@ void PIN_MANAGER_Initialize(void)
 
 
     IOCCF1_SetInterruptHandler(IOCCF1_DefaultInterruptHandler);
+    IOCCF3_SetInterruptHandler(IOCCF3_DefaultInterruptHandler);
     IOCCF5_SetInterruptHandler(IOCCF5_DefaultInterruptHandler);
 
 
@@ -37570,6 +37586,8 @@ void PIN_MANAGER_Initialize(void)
 
 
     RB1PPS = 0x20;
+    CANRXPPS = 0x0D;
+    RB4PPS = 0x46;
     U1RXPPS = 0x08;
 }
 
@@ -37579,6 +37597,11 @@ void PIN_MANAGER_IOC(void)
     if(IOCCFbits.IOCCF1 == 1)
     {
         IOCCF1_ISR();
+    }
+
+    if(IOCCFbits.IOCCF3 == 1)
+    {
+        IOCCF3_ISR();
     }
 
     if(IOCCFbits.IOCCF5 == 1)
@@ -37613,6 +37636,36 @@ void IOCCF1_SetInterruptHandler(void (* InterruptHandler)(void)){
 
 
 void IOCCF1_DefaultInterruptHandler(void){
+
+
+}
+
+
+
+
+void IOCCF3_ISR(void) {
+
+
+
+
+    if(IOCCF3_InterruptHandler)
+    {
+        IOCCF3_InterruptHandler();
+    }
+    IOCCFbits.IOCCF3 = 0;
+}
+
+
+
+
+void IOCCF3_SetInterruptHandler(void (* InterruptHandler)(void)){
+    IOCCF3_InterruptHandler = InterruptHandler;
+}
+
+
+
+
+void IOCCF3_DefaultInterruptHandler(void){
 
 
 }

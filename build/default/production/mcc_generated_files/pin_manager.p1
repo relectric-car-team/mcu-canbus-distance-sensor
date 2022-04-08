@@ -1,6 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F22169 `(v ~T0 @X0 0 tf ]
-[v F22171 `(v ~T0 @X0 0 tf ]
+[v F22177 `(v ~T0 @X0 0 tf ]
+[v F22179 `(v ~T0 @X0 0 tf ]
+[v F22181 `(v ~T0 @X0 0 tf ]
 "1501 /Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h
 [v _LATA `Vuc ~T0 @X0 0 e@1214 ]
 "1563
@@ -105,18 +106,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;/Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h: 59771: extern volatile IOCCPbits_t IOCCPbits __attribute__((address(0x415)));
 [v _IOCCPbits `VS2723 ~T0 @X0 0 e@1045 ]
 [v F22154 `(v ~T0 @X0 0 tf ]
-"230 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 230: void IOCCF1_SetInterruptHandler(void (* InterruptHandler)(void));
+"294 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 294: void IOCCF1_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCCF1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F22154 ]
-"278
-[; ;mcc_generated_files/pin_manager.h: 278: void IOCCF1_DefaultInterruptHandler(void);
+"342
+[; ;mcc_generated_files/pin_manager.h: 342: void IOCCF1_DefaultInterruptHandler(void);
 [v _IOCCF1_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
 [v F22162 `(v ~T0 @X0 0 tf ]
-"314
-[; ;mcc_generated_files/pin_manager.h: 314: void IOCCF5_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _IOCCF5_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F22162 ]
-"362
-[; ;mcc_generated_files/pin_manager.h: 362: void IOCCF5_DefaultInterruptHandler(void);
+"378
+[; ;mcc_generated_files/pin_manager.h: 378: void IOCCF3_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _IOCCF3_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F22162 ]
+"426
+[; ;mcc_generated_files/pin_manager.h: 426: void IOCCF3_DefaultInterruptHandler(void);
+[v _IOCCF3_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
+[v F22170 `(v ~T0 @X0 0 tf ]
+"462
+[; ;mcc_generated_files/pin_manager.h: 462: void IOCCF5_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _IOCCF5_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F22170 ]
+"510
+[; ;mcc_generated_files/pin_manager.h: 510: void IOCCF5_DefaultInterruptHandler(void);
 [v _IOCCF5_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
 "65073 /Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h
 [; ;/Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h: 65073:     struct {
@@ -132,21 +140,33 @@ Version 4.0 HI-TECH Software Intermediate Code
 "24216
 [; ;/Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h: 24216: extern volatile unsigned char RB1PPS __attribute__((address(0x20A)));
 [v _RB1PPS `Vuc ~T0 @X0 0 e@522 ]
+"24966
+[; ;/Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h: 24966: extern volatile unsigned char CANRXPPS __attribute__((address(0x23D)));
+[v _CANRXPPS `Vuc ~T0 @X0 0 e@573 ]
+"24366
+[; ;/Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h: 24366: extern volatile unsigned char RB4PPS __attribute__((address(0x20D)));
+[v _RB4PPS `Vuc ~T0 @X0 0 e@525 ]
 "29041
 [; ;/Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h: 29041: extern volatile unsigned char U1RXPPS __attribute__((address(0x272)));
 [v _U1RXPPS `Vuc ~T0 @X0 0 e@626 ]
-"207 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 207: void IOCCF1_ISR(void);
+"271 mcc_generated_files/pin_manager.h
+[; ;mcc_generated_files/pin_manager.h: 271: void IOCCF1_ISR(void);
 [v _IOCCF1_ISR `(v ~T0 @X0 0 ef ]
-"291
-[; ;mcc_generated_files/pin_manager.h: 291: void IOCCF5_ISR(void);
+"355
+[; ;mcc_generated_files/pin_manager.h: 355: void IOCCF3_ISR(void);
+[v _IOCCF3_ISR `(v ~T0 @X0 0 ef ]
+"439
+[; ;mcc_generated_files/pin_manager.h: 439: void IOCCF5_ISR(void);
 [v _IOCCF5_ISR `(v ~T0 @X0 0 ef ]
-[v F22177 `(v ~T0 @X0 0 tf ]
-[v F22179 `(v ~T0 @X0 0 tf ]
-[v F22181 `(v ~T0 @X0 0 tf ]
-[v F22185 `(v ~T0 @X0 0 tf ]
-[v F22187 `(v ~T0 @X0 0 tf ]
-[v F22189 `(v ~T0 @X0 0 tf ]
+[v F22188 `(v ~T0 @X0 0 tf ]
+[v F22190 `(v ~T0 @X0 0 tf ]
+[v F22192 `(v ~T0 @X0 0 tf ]
+[v F22196 `(v ~T0 @X0 0 tf ]
+[v F22198 `(v ~T0 @X0 0 tf ]
+[v F22200 `(v ~T0 @X0 0 tf ]
+[v F22204 `(v ~T0 @X0 0 tf ]
+[v F22206 `(v ~T0 @X0 0 tf ]
+[v F22208 `(v ~T0 @X0 0 tf ]
 "363 /Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h
 [; ;/Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3665,262 +3685,346 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 04FFh ;# ">
 "54 mcc_generated_files/pin_manager.c
 [; ;mcc_generated_files/pin_manager.c: 54: void (*IOCCF1_InterruptHandler)(void);
-[v _IOCCF1_InterruptHandler `*F22169 ~T0 @X0 1 e ]
+[v _IOCCF1_InterruptHandler `*F22177 ~T0 @X0 1 e ]
 "55
-[; ;mcc_generated_files/pin_manager.c: 55: void (*IOCCF5_InterruptHandler)(void);
-[v _IOCCF5_InterruptHandler `*F22171 ~T0 @X0 1 e ]
-"58
-[; ;mcc_generated_files/pin_manager.c: 58: void PIN_MANAGER_Initialize(void)
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
+[; ;mcc_generated_files/pin_manager.c: 55: void (*IOCCF3_InterruptHandler)(void);
+[v _IOCCF3_InterruptHandler `*F22179 ~T0 @X0 1 e ]
+"56
+[; ;mcc_generated_files/pin_manager.c: 56: void (*IOCCF5_InterruptHandler)(void);
+[v _IOCCF5_InterruptHandler `*F22181 ~T0 @X0 1 e ]
 "59
-[; ;mcc_generated_files/pin_manager.c: 59: {
+[; ;mcc_generated_files/pin_manager.c: 59: void PIN_MANAGER_Initialize(void)
+[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
+"60
+[; ;mcc_generated_files/pin_manager.c: 60: {
 {
 [e :U _PIN_MANAGER_Initialize ]
 [f ]
-"63
-[; ;mcc_generated_files/pin_manager.c: 63:     LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
 "64
-[; ;mcc_generated_files/pin_manager.c: 64:     LATB = 0x00;
-[e = _LATB -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 64:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
 "65
-[; ;mcc_generated_files/pin_manager.c: 65:     LATC = 0x00;
+[; ;mcc_generated_files/pin_manager.c: 65:     LATB = 0x00;
+[e = _LATB -> -> 0 `i `uc ]
+"66
+[; ;mcc_generated_files/pin_manager.c: 66:     LATC = 0x00;
 [e = _LATC -> -> 0 `i `uc ]
-"70
-[; ;mcc_generated_files/pin_manager.c: 70:     TRISE = 0x08;
-[e = _TRISE -> -> 8 `i `uc ]
 "71
-[; ;mcc_generated_files/pin_manager.c: 71:     TRISA = 0xFF;
-[e = _TRISA -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 71:     TRISE = 0x08;
+[e = _TRISE -> -> 8 `i `uc ]
 "72
-[; ;mcc_generated_files/pin_manager.c: 72:     TRISB = 0xFD;
-[e = _TRISB -> -> 253 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 72:     TRISA = 0xFF;
+[e = _TRISA -> -> 255 `i `uc ]
 "73
-[; ;mcc_generated_files/pin_manager.c: 73:     TRISC = 0xEE;
-[e = _TRISC -> -> 238 `i `uc ]
-"78
-[; ;mcc_generated_files/pin_manager.c: 78:     ANSELC = 0xCC;
-[e = _ANSELC -> -> 204 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 73:     TRISB = 0xED;
+[e = _TRISB -> -> 237 `i `uc ]
+"74
+[; ;mcc_generated_files/pin_manager.c: 74:     TRISC = 0xEA;
+[e = _TRISC -> -> 234 `i `uc ]
 "79
-[; ;mcc_generated_files/pin_manager.c: 79:     ANSELB = 0xEC;
-[e = _ANSELB -> -> 236 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 79:     ANSELC = 0xC0;
+[e = _ANSELC -> -> 192 `i `uc ]
 "80
-[; ;mcc_generated_files/pin_manager.c: 80:     ANSELA = 0xFE;
+[; ;mcc_generated_files/pin_manager.c: 80:     ANSELB = 0xCC;
+[e = _ANSELB -> -> 204 `i `uc ]
+"81
+[; ;mcc_generated_files/pin_manager.c: 81:     ANSELA = 0xFE;
 [e = _ANSELA -> -> 254 `i `uc ]
-"85
-[; ;mcc_generated_files/pin_manager.c: 85:     WPUE = 0x00;
-[e = _WPUE -> -> 0 `i `uc ]
 "86
-[; ;mcc_generated_files/pin_manager.c: 86:     WPUB = 0x00;
-[e = _WPUB -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 86:     WPUE = 0x00;
+[e = _WPUE -> -> 0 `i `uc ]
 "87
-[; ;mcc_generated_files/pin_manager.c: 87:     WPUA = 0x00;
-[e = _WPUA -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 87:     WPUB = 0x00;
+[e = _WPUB -> -> 0 `i `uc ]
 "88
-[; ;mcc_generated_files/pin_manager.c: 88:     WPUC = 0x00;
+[; ;mcc_generated_files/pin_manager.c: 88:     WPUA = 0x00;
+[e = _WPUA -> -> 0 `i `uc ]
+"89
+[; ;mcc_generated_files/pin_manager.c: 89:     WPUC = 0x00;
 [e = _WPUC -> -> 0 `i `uc ]
-"93
-[; ;mcc_generated_files/pin_manager.c: 93:     ODCONA = 0x00;
-[e = _ODCONA -> -> 0 `i `uc ]
 "94
-[; ;mcc_generated_files/pin_manager.c: 94:     ODCONB = 0x00;
-[e = _ODCONB -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 94:     ODCONA = 0x00;
+[e = _ODCONA -> -> 0 `i `uc ]
 "95
-[; ;mcc_generated_files/pin_manager.c: 95:     ODCONC = 0x00;
+[; ;mcc_generated_files/pin_manager.c: 95:     ODCONB = 0x00;
+[e = _ODCONB -> -> 0 `i `uc ]
+"96
+[; ;mcc_generated_files/pin_manager.c: 96:     ODCONC = 0x00;
 [e = _ODCONC -> -> 0 `i `uc ]
-"100
-[; ;mcc_generated_files/pin_manager.c: 100:     SLRCONA = 0xFF;
-[e = _SLRCONA -> -> 255 `i `uc ]
 "101
-[; ;mcc_generated_files/pin_manager.c: 101:     SLRCONB = 0xFF;
-[e = _SLRCONB -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 101:     SLRCONA = 0xFF;
+[e = _SLRCONA -> -> 255 `i `uc ]
 "102
-[; ;mcc_generated_files/pin_manager.c: 102:     SLRCONC = 0xFF;
+[; ;mcc_generated_files/pin_manager.c: 102:     SLRCONB = 0xFF;
+[e = _SLRCONB -> -> 255 `i `uc ]
+"103
+[; ;mcc_generated_files/pin_manager.c: 103:     SLRCONC = 0xFF;
 [e = _SLRCONC -> -> 255 `i `uc ]
-"107
-[; ;mcc_generated_files/pin_manager.c: 107:     INLVLA = 0xFF;
-[e = _INLVLA -> -> 255 `i `uc ]
 "108
-[; ;mcc_generated_files/pin_manager.c: 108:     INLVLB = 0xFF;
-[e = _INLVLB -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 108:     INLVLA = 0xFF;
+[e = _INLVLA -> -> 255 `i `uc ]
 "109
-[; ;mcc_generated_files/pin_manager.c: 109:     INLVLC = 0xFF;
-[e = _INLVLC -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 109:     INLVLB = 0xFF;
+[e = _INLVLB -> -> 255 `i `uc ]
 "110
-[; ;mcc_generated_files/pin_manager.c: 110:     INLVLE = 0x08;
+[; ;mcc_generated_files/pin_manager.c: 110:     INLVLC = 0xFF;
+[e = _INLVLC -> -> 255 `i `uc ]
+"111
+[; ;mcc_generated_files/pin_manager.c: 111:     INLVLE = 0x08;
 [e = _INLVLE -> -> 8 `i `uc ]
-"117
-[; ;mcc_generated_files/pin_manager.c: 117:     IOCCFbits.IOCCF1 = 0;
+"118
+[; ;mcc_generated_files/pin_manager.c: 118:     IOCCFbits.IOCCF1 = 0;
 [e = . . _IOCCFbits 0 1 -> -> 0 `i `uc ]
-"119
-[; ;mcc_generated_files/pin_manager.c: 119:     IOCCFbits.IOCCF5 = 0;
+"120
+[; ;mcc_generated_files/pin_manager.c: 120:     IOCCFbits.IOCCF3 = 0;
+[e = . . _IOCCFbits 0 3 -> -> 0 `i `uc ]
+"122
+[; ;mcc_generated_files/pin_manager.c: 122:     IOCCFbits.IOCCF5 = 0;
 [e = . . _IOCCFbits 0 5 -> -> 0 `i `uc ]
-"121
-[; ;mcc_generated_files/pin_manager.c: 121:     IOCCNbits.IOCCN1 = 1;
+"124
+[; ;mcc_generated_files/pin_manager.c: 124:     IOCCNbits.IOCCN1 = 1;
 [e = . . _IOCCNbits 0 1 -> -> 1 `i `uc ]
-"123
-[; ;mcc_generated_files/pin_manager.c: 123:     IOCCNbits.IOCCN5 = 1;
+"126
+[; ;mcc_generated_files/pin_manager.c: 126:     IOCCNbits.IOCCN3 = 1;
+[e = . . _IOCCNbits 0 3 -> -> 1 `i `uc ]
+"128
+[; ;mcc_generated_files/pin_manager.c: 128:     IOCCNbits.IOCCN5 = 1;
 [e = . . _IOCCNbits 0 5 -> -> 1 `i `uc ]
-"125
-[; ;mcc_generated_files/pin_manager.c: 125:     IOCCPbits.IOCCP1 = 1;
+"130
+[; ;mcc_generated_files/pin_manager.c: 130:     IOCCPbits.IOCCP1 = 1;
 [e = . . _IOCCPbits 0 1 -> -> 1 `i `uc ]
-"127
-[; ;mcc_generated_files/pin_manager.c: 127:     IOCCPbits.IOCCP5 = 1;
-[e = . . _IOCCPbits 0 5 -> -> 1 `i `uc ]
 "132
-[; ;mcc_generated_files/pin_manager.c: 132:     IOCCF1_SetInterruptHandler(IOCCF1_DefaultInterruptHandler);
-[e ( _IOCCF1_SetInterruptHandler (1 &U _IOCCF1_DefaultInterruptHandler ]
-"133
-[; ;mcc_generated_files/pin_manager.c: 133:     IOCCF5_SetInterruptHandler(IOCCF5_DefaultInterruptHandler);
-[e ( _IOCCF5_SetInterruptHandler (1 &U _IOCCF5_DefaultInterruptHandler ]
-"136
-[; ;mcc_generated_files/pin_manager.c: 136:     PIE0bits.IOCIE = 1;
-[e = . . _PIE0bits 0 7 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 132:     IOCCPbits.IOCCP3 = 1;
+[e = . . _IOCCPbits 0 3 -> -> 1 `i `uc ]
+"134
+[; ;mcc_generated_files/pin_manager.c: 134:     IOCCPbits.IOCCP5 = 1;
+[e = . . _IOCCPbits 0 5 -> -> 1 `i `uc ]
 "139
-[; ;mcc_generated_files/pin_manager.c: 139:     RB1PPS = 0x20;
-[e = _RB1PPS -> -> 32 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 139:     IOCCF1_SetInterruptHandler(IOCCF1_DefaultInterruptHandler);
+[e ( _IOCCF1_SetInterruptHandler (1 &U _IOCCF1_DefaultInterruptHandler ]
 "140
-[; ;mcc_generated_files/pin_manager.c: 140:     U1RXPPS = 0x08;
-[e = _U1RXPPS -> -> 8 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 140:     IOCCF3_SetInterruptHandler(IOCCF3_DefaultInterruptHandler);
+[e ( _IOCCF3_SetInterruptHandler (1 &U _IOCCF3_DefaultInterruptHandler ]
 "141
-[; ;mcc_generated_files/pin_manager.c: 141: }
+[; ;mcc_generated_files/pin_manager.c: 141:     IOCCF5_SetInterruptHandler(IOCCF5_DefaultInterruptHandler);
+[e ( _IOCCF5_SetInterruptHandler (1 &U _IOCCF5_DefaultInterruptHandler ]
+"144
+[; ;mcc_generated_files/pin_manager.c: 144:     PIE0bits.IOCIE = 1;
+[e = . . _PIE0bits 0 7 -> -> 1 `i `uc ]
+"147
+[; ;mcc_generated_files/pin_manager.c: 147:     RB1PPS = 0x20;
+[e = _RB1PPS -> -> 32 `i `uc ]
+"148
+[; ;mcc_generated_files/pin_manager.c: 148:     CANRXPPS = 0x0D;
+[e = _CANRXPPS -> -> 13 `i `uc ]
+"149
+[; ;mcc_generated_files/pin_manager.c: 149:     RB4PPS = 0x46;
+[e = _RB4PPS -> -> 70 `i `uc ]
+"150
+[; ;mcc_generated_files/pin_manager.c: 150:     U1RXPPS = 0x08;
+[e = _U1RXPPS -> -> 8 `i `uc ]
+"151
+[; ;mcc_generated_files/pin_manager.c: 151: }
 [e :UE 3179 ]
 }
-"143
-[; ;mcc_generated_files/pin_manager.c: 143: void PIN_MANAGER_IOC(void)
+"153
+[; ;mcc_generated_files/pin_manager.c: 153: void PIN_MANAGER_IOC(void)
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"144
-[; ;mcc_generated_files/pin_manager.c: 144: {
+"154
+[; ;mcc_generated_files/pin_manager.c: 154: {
 {
 [e :U _PIN_MANAGER_IOC ]
 [f ]
-"146
-[; ;mcc_generated_files/pin_manager.c: 146:     if(IOCCFbits.IOCCF1 == 1)
+"156
+[; ;mcc_generated_files/pin_manager.c: 156:     if(IOCCFbits.IOCCF1 == 1)
 [e $ ! == -> . . _IOCCFbits 0 1 `i -> 1 `i 3181  ]
-"147
-[; ;mcc_generated_files/pin_manager.c: 147:     {
+"157
+[; ;mcc_generated_files/pin_manager.c: 157:     {
 {
-"148
-[; ;mcc_generated_files/pin_manager.c: 148:         IOCCF1_ISR();
+"158
+[; ;mcc_generated_files/pin_manager.c: 158:         IOCCF1_ISR();
 [e ( _IOCCF1_ISR ..  ]
-"149
-[; ;mcc_generated_files/pin_manager.c: 149:     }
+"159
+[; ;mcc_generated_files/pin_manager.c: 159:     }
 }
 [e :U 3181 ]
-"151
-[; ;mcc_generated_files/pin_manager.c: 151:     if(IOCCFbits.IOCCF5 == 1)
-[e $ ! == -> . . _IOCCFbits 0 5 `i -> 1 `i 3182  ]
-"152
-[; ;mcc_generated_files/pin_manager.c: 152:     {
+"161
+[; ;mcc_generated_files/pin_manager.c: 161:     if(IOCCFbits.IOCCF3 == 1)
+[e $ ! == -> . . _IOCCFbits 0 3 `i -> 1 `i 3182  ]
+"162
+[; ;mcc_generated_files/pin_manager.c: 162:     {
 {
-"153
-[; ;mcc_generated_files/pin_manager.c: 153:         IOCCF5_ISR();
-[e ( _IOCCF5_ISR ..  ]
-"154
-[; ;mcc_generated_files/pin_manager.c: 154:     }
+"163
+[; ;mcc_generated_files/pin_manager.c: 163:         IOCCF3_ISR();
+[e ( _IOCCF3_ISR ..  ]
+"164
+[; ;mcc_generated_files/pin_manager.c: 164:     }
 }
 [e :U 3182 ]
-"155
-[; ;mcc_generated_files/pin_manager.c: 155: }
+"166
+[; ;mcc_generated_files/pin_manager.c: 166:     if(IOCCFbits.IOCCF5 == 1)
+[e $ ! == -> . . _IOCCFbits 0 5 `i -> 1 `i 3183  ]
+"167
+[; ;mcc_generated_files/pin_manager.c: 167:     {
+{
+"168
+[; ;mcc_generated_files/pin_manager.c: 168:         IOCCF5_ISR();
+[e ( _IOCCF5_ISR ..  ]
+"169
+[; ;mcc_generated_files/pin_manager.c: 169:     }
+}
+[e :U 3183 ]
+"170
+[; ;mcc_generated_files/pin_manager.c: 170: }
 [e :UE 3180 ]
 }
-"160
-[; ;mcc_generated_files/pin_manager.c: 160: void IOCCF1_ISR(void) {
+"175
+[; ;mcc_generated_files/pin_manager.c: 175: void IOCCF1_ISR(void) {
 [v _IOCCF1_ISR `(v ~T0 @X0 1 ef ]
 {
 [e :U _IOCCF1_ISR ]
 [f ]
-"165
-[; ;mcc_generated_files/pin_manager.c: 165:     if(IOCCF1_InterruptHandler)
-[e $ ! != _IOCCF1_InterruptHandler -> -> 0 `i `*F22177 3184  ]
-"166
-[; ;mcc_generated_files/pin_manager.c: 166:     {
+"180
+[; ;mcc_generated_files/pin_manager.c: 180:     if(IOCCF1_InterruptHandler)
+[e $ ! != _IOCCF1_InterruptHandler -> -> 0 `i `*F22188 3185  ]
+"181
+[; ;mcc_generated_files/pin_manager.c: 181:     {
 {
-"167
-[; ;mcc_generated_files/pin_manager.c: 167:         IOCCF1_InterruptHandler();
+"182
+[; ;mcc_generated_files/pin_manager.c: 182:         IOCCF1_InterruptHandler();
 [e ( *U _IOCCF1_InterruptHandler ..  ]
-"168
-[; ;mcc_generated_files/pin_manager.c: 168:     }
+"183
+[; ;mcc_generated_files/pin_manager.c: 183:     }
 }
-[e :U 3184 ]
-"169
-[; ;mcc_generated_files/pin_manager.c: 169:     IOCCFbits.IOCCF1 = 0;
+[e :U 3185 ]
+"184
+[; ;mcc_generated_files/pin_manager.c: 184:     IOCCFbits.IOCCF1 = 0;
 [e = . . _IOCCFbits 0 1 -> -> 0 `i `uc ]
-"170
-[; ;mcc_generated_files/pin_manager.c: 170: }
-[e :UE 3183 ]
+"185
+[; ;mcc_generated_files/pin_manager.c: 185: }
+[e :UE 3184 ]
 }
-"175
-[; ;mcc_generated_files/pin_manager.c: 175: void IOCCF1_SetInterruptHandler(void (* InterruptHandler)(void)){
-[v _IOCCF1_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F22179 ]
+"190
+[; ;mcc_generated_files/pin_manager.c: 190: void IOCCF1_SetInterruptHandler(void (* InterruptHandler)(void)){
+[v _IOCCF1_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F22190 ]
 {
 [e :U _IOCCF1_SetInterruptHandler ]
-[v _InterruptHandler `*F22181 ~T0 @X0 1 r1 ]
+[v _InterruptHandler `*F22192 ~T0 @X0 1 r1 ]
 [f ]
-"176
-[; ;mcc_generated_files/pin_manager.c: 176:     IOCCF1_InterruptHandler = InterruptHandler;
+"191
+[; ;mcc_generated_files/pin_manager.c: 191:     IOCCF1_InterruptHandler = InterruptHandler;
 [e = _IOCCF1_InterruptHandler _InterruptHandler ]
-"177
-[; ;mcc_generated_files/pin_manager.c: 177: }
-[e :UE 3185 ]
+"192
+[; ;mcc_generated_files/pin_manager.c: 192: }
+[e :UE 3186 ]
 }
-"182
-[; ;mcc_generated_files/pin_manager.c: 182: void IOCCF1_DefaultInterruptHandler(void){
+"197
+[; ;mcc_generated_files/pin_manager.c: 197: void IOCCF1_DefaultInterruptHandler(void){
 [v _IOCCF1_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _IOCCF1_DefaultInterruptHandler ]
 [f ]
-"185
-[; ;mcc_generated_files/pin_manager.c: 185: }
-[e :UE 3186 ]
-}
-"190
-[; ;mcc_generated_files/pin_manager.c: 190: void IOCCF5_ISR(void) {
-[v _IOCCF5_ISR `(v ~T0 @X0 1 ef ]
-{
-[e :U _IOCCF5_ISR ]
-[f ]
-"195
-[; ;mcc_generated_files/pin_manager.c: 195:     if(IOCCF5_InterruptHandler)
-[e $ ! != _IOCCF5_InterruptHandler -> -> 0 `i `*F22185 3188  ]
-"196
-[; ;mcc_generated_files/pin_manager.c: 196:     {
-{
-"197
-[; ;mcc_generated_files/pin_manager.c: 197:         IOCCF5_InterruptHandler();
-[e ( *U _IOCCF5_InterruptHandler ..  ]
-"198
-[; ;mcc_generated_files/pin_manager.c: 198:     }
-}
-[e :U 3188 ]
-"199
-[; ;mcc_generated_files/pin_manager.c: 199:     IOCCFbits.IOCCF5 = 0;
-[e = . . _IOCCFbits 0 5 -> -> 0 `i `uc ]
 "200
 [; ;mcc_generated_files/pin_manager.c: 200: }
 [e :UE 3187 ]
 }
 "205
-[; ;mcc_generated_files/pin_manager.c: 205: void IOCCF5_SetInterruptHandler(void (* InterruptHandler)(void)){
-[v _IOCCF5_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F22187 ]
+[; ;mcc_generated_files/pin_manager.c: 205: void IOCCF3_ISR(void) {
+[v _IOCCF3_ISR `(v ~T0 @X0 1 ef ]
+{
+[e :U _IOCCF3_ISR ]
+[f ]
+"210
+[; ;mcc_generated_files/pin_manager.c: 210:     if(IOCCF3_InterruptHandler)
+[e $ ! != _IOCCF3_InterruptHandler -> -> 0 `i `*F22196 3189  ]
+"211
+[; ;mcc_generated_files/pin_manager.c: 211:     {
+{
+"212
+[; ;mcc_generated_files/pin_manager.c: 212:         IOCCF3_InterruptHandler();
+[e ( *U _IOCCF3_InterruptHandler ..  ]
+"213
+[; ;mcc_generated_files/pin_manager.c: 213:     }
+}
+[e :U 3189 ]
+"214
+[; ;mcc_generated_files/pin_manager.c: 214:     IOCCFbits.IOCCF3 = 0;
+[e = . . _IOCCFbits 0 3 -> -> 0 `i `uc ]
+"215
+[; ;mcc_generated_files/pin_manager.c: 215: }
+[e :UE 3188 ]
+}
+"220
+[; ;mcc_generated_files/pin_manager.c: 220: void IOCCF3_SetInterruptHandler(void (* InterruptHandler)(void)){
+[v _IOCCF3_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F22198 ]
+{
+[e :U _IOCCF3_SetInterruptHandler ]
+[v _InterruptHandler `*F22200 ~T0 @X0 1 r1 ]
+[f ]
+"221
+[; ;mcc_generated_files/pin_manager.c: 221:     IOCCF3_InterruptHandler = InterruptHandler;
+[e = _IOCCF3_InterruptHandler _InterruptHandler ]
+"222
+[; ;mcc_generated_files/pin_manager.c: 222: }
+[e :UE 3190 ]
+}
+"227
+[; ;mcc_generated_files/pin_manager.c: 227: void IOCCF3_DefaultInterruptHandler(void){
+[v _IOCCF3_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _IOCCF3_DefaultInterruptHandler ]
+[f ]
+"230
+[; ;mcc_generated_files/pin_manager.c: 230: }
+[e :UE 3191 ]
+}
+"235
+[; ;mcc_generated_files/pin_manager.c: 235: void IOCCF5_ISR(void) {
+[v _IOCCF5_ISR `(v ~T0 @X0 1 ef ]
+{
+[e :U _IOCCF5_ISR ]
+[f ]
+"240
+[; ;mcc_generated_files/pin_manager.c: 240:     if(IOCCF5_InterruptHandler)
+[e $ ! != _IOCCF5_InterruptHandler -> -> 0 `i `*F22204 3193  ]
+"241
+[; ;mcc_generated_files/pin_manager.c: 241:     {
+{
+"242
+[; ;mcc_generated_files/pin_manager.c: 242:         IOCCF5_InterruptHandler();
+[e ( *U _IOCCF5_InterruptHandler ..  ]
+"243
+[; ;mcc_generated_files/pin_manager.c: 243:     }
+}
+[e :U 3193 ]
+"244
+[; ;mcc_generated_files/pin_manager.c: 244:     IOCCFbits.IOCCF5 = 0;
+[e = . . _IOCCFbits 0 5 -> -> 0 `i `uc ]
+"245
+[; ;mcc_generated_files/pin_manager.c: 245: }
+[e :UE 3192 ]
+}
+"250
+[; ;mcc_generated_files/pin_manager.c: 250: void IOCCF5_SetInterruptHandler(void (* InterruptHandler)(void)){
+[v _IOCCF5_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F22206 ]
 {
 [e :U _IOCCF5_SetInterruptHandler ]
-[v _InterruptHandler `*F22189 ~T0 @X0 1 r1 ]
+[v _InterruptHandler `*F22208 ~T0 @X0 1 r1 ]
 [f ]
-"206
-[; ;mcc_generated_files/pin_manager.c: 206:     IOCCF5_InterruptHandler = InterruptHandler;
+"251
+[; ;mcc_generated_files/pin_manager.c: 251:     IOCCF5_InterruptHandler = InterruptHandler;
 [e = _IOCCF5_InterruptHandler _InterruptHandler ]
-"207
-[; ;mcc_generated_files/pin_manager.c: 207: }
-[e :UE 3189 ]
+"252
+[; ;mcc_generated_files/pin_manager.c: 252: }
+[e :UE 3194 ]
 }
-"212
-[; ;mcc_generated_files/pin_manager.c: 212: void IOCCF5_DefaultInterruptHandler(void){
+"257
+[; ;mcc_generated_files/pin_manager.c: 257: void IOCCF5_DefaultInterruptHandler(void){
 [v _IOCCF5_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _IOCCF5_DefaultInterruptHandler ]
 [f ]
-"215
-[; ;mcc_generated_files/pin_manager.c: 215: }
-[e :UE 3190 ]
+"260
+[; ;mcc_generated_files/pin_manager.c: 260: }
+[e :UE 3195 ]
 }

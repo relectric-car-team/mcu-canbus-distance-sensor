@@ -354,21 +354,27 @@ TMR2_RESERVED_4 36
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "76
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"58 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
+"59 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"143
+"153
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
-"160
-[v _IOCCF1_ISR IOCCF1_ISR `(v  1 e 1 0 ]
 "175
-[v _IOCCF1_SetInterruptHandler IOCCF1_SetInterruptHandler `(v  1 e 1 0 ]
-"182
-[v _IOCCF1_DefaultInterruptHandler IOCCF1_DefaultInterruptHandler `(v  1 e 1 0 ]
+[v _IOCCF1_ISR IOCCF1_ISR `(v  1 e 1 0 ]
 "190
-[v _IOCCF5_ISR IOCCF5_ISR `(v  1 e 1 0 ]
+[v _IOCCF1_SetInterruptHandler IOCCF1_SetInterruptHandler `(v  1 e 1 0 ]
+"197
+[v _IOCCF1_DefaultInterruptHandler IOCCF1_DefaultInterruptHandler `(v  1 e 1 0 ]
 "205
+[v _IOCCF3_ISR IOCCF3_ISR `(v  1 e 1 0 ]
+"220
+[v _IOCCF3_SetInterruptHandler IOCCF3_SetInterruptHandler `(v  1 e 1 0 ]
+"227
+[v _IOCCF3_DefaultInterruptHandler IOCCF3_DefaultInterruptHandler `(v  1 e 1 0 ]
+"235
+[v _IOCCF5_ISR IOCCF5_ISR `(v  1 e 1 0 ]
+"250
 [v _IOCCF5_SetInterruptHandler IOCCF5_SetInterruptHandler `(v  1 e 1 0 ]
-"212
+"257
 [v _IOCCF5_DefaultInterruptHandler IOCCF5_DefaultInterruptHandler `(v  1 e 1 0 ]
 "62 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
@@ -436,7 +442,7 @@ TMR2_RESERVED_4 36
 [v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-[s S1341 . 1 `uc 1 SWIF 1 0 :1:0 
+[s S1367 . 1 `uc 1 SWIF 1 0 :1:0 
 `uc 1 HLVDIF 1 0 :1:1 
 `uc 1 OSFIF 1 0 :1:2 
 `uc 1 CSWIF 1 0 :1:3 
@@ -446,9 +452,9 @@ TMR2_RESERVED_4 36
 `uc 1 IOCIF 1 0 :1:7 
 ]
 "533 /Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h
-[u S1350 . 1 `S1341 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES1350  1 e 1 @1198 ]
-[s S1303 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+[u S1376 . 1 `S1367 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES1376  1 e 1 @1198 ]
+[s S1329 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
 `uc 1 SPI1TXIF 1 0 :1:1 
 `uc 1 SPI1IF 1 0 :1:2 
 `uc 1 TMR2IF 1 0 :1:3 
@@ -458,8 +464,8 @@ TMR2_RESERVED_4 36
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "727
-[u S1312 . 1 `S1303 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES1312  1 e 1 @1201 ]
+[u S1338 . 1 `S1329 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1338  1 e 1 @1201 ]
 [s S151 . 1 `uc 1 U1RXIF 1 0 :1:0 
 `uc 1 U1TXIF 1 0 :1:1 
 `uc 1 U1EIF 1 0 :1:2 
@@ -490,7 +496,7 @@ TMR2_RESERVED_4 36
 [v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
 "1625
 [v _LATC LATC `VEuc  1 e 1 @1216 ]
-[s S1646 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1936 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -500,8 +506,8 @@ TMR2_RESERVED_4 36
 `uc 1 LATC7 1 0 :1:7 
 ]
 "1642
-[u S1655 . 1 `S1646 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1655  1 e 1 @1216 ]
+[u S1945 . 1 `S1936 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1945  1 e 1 @1216 ]
 "1678
 [v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
 "1687
@@ -516,7 +522,7 @@ TMR2_RESERVED_4 36
 [v _TRISC TRISC `VEuc  1 e 1 @1224 ]
 "1873
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S1669 . 1 `uc 1 RC0 1 0 :1:0 
+[s S1959 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -526,9 +532,9 @@ TMR2_RESERVED_4 36
 `uc 1 RC7 1 0 :1:7 
 ]
 "2035
-[u S1678 . 1 `S1669 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES1678  1 e 1 @1232 ]
-[s S1232 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[u S1968 . 1 `S1959 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1968  1 e 1 @1232 ]
+[s S1258 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -537,11 +543,11 @@ TMR2_RESERVED_4 36
 `uc 1 GIE 1 0 :1:7 
 ]
 "2121
-[s S1240 . 1 `uc 1 . 1 0 :7:0 
+[s S1266 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1243 . 1 `S1232 1 . 1 0 `S1240 1 . 1 0 ]
-[v _INTCON0bits INTCON0bits `VES1243  1 e 1 @1238 ]
+[u S1269 . 1 `S1258 1 . 1 0 `S1266 1 . 1 0 ]
+[v _INTCON0bits INTCON0bits `VES1269  1 e 1 @1238 ]
 "5336
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
 "5476
@@ -743,6 +749,10 @@ TMR2_RESERVED_4 36
 [v _C1MASK1T C1MASK1T `VEuc  1 e 1 @411 ]
 "24216
 [v _RB1PPS RB1PPS `VEuc  1 e 1 @522 ]
+"24366
+[v _RB4PPS RB4PPS `VEuc  1 e 1 @525 ]
+"24966
+[v _CANRXPPS CANRXPPS `VEuc  1 e 1 @573 ]
 "29041
 [v _U1RXPPS U1RXPPS `VEuc  1 e 1 @626 ]
 "31475
@@ -763,31 +773,31 @@ TMR2_RESERVED_4 36
 [v _U1P3H U1P3H `VEuc  1 e 1 @682 ]
 "31732
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @683 ]
-[s S1063 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1089 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "31765
-[s S1068 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S1094 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S1074 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S1100 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S1079 . 1 `uc 1 MODE 1 0 :4:0 
+[s S1105 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S1085 . 1 `S1063 1 . 1 0 `S1068 1 . 1 0 `S1074 1 . 1 0 `S1079 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES1085  1 e 1 @683 ]
+[u S1111 . 1 `S1089 1 . 1 0 `S1094 1 . 1 0 `S1100 1 . 1 0 `S1105 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES1111  1 e 1 @683 ]
 "31860
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @684 ]
 "31940
@@ -802,7 +812,7 @@ TMR2_RESERVED_4 36
 [v _U1UIR U1UIR `VEuc  1 e 1 @689 ]
 "32315
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @690 ]
-[s S1113 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S1139 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -812,7 +822,7 @@ TMR2_RESERVED_4 36
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "32342
-[s S1122 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S1148 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -821,8 +831,8 @@ TMR2_RESERVED_4 36
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S1131 . 1 `S1113 1 . 1 0 `S1122 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES1131  1 e 1 @690 ]
+[u S1157 . 1 `S1139 1 . 1 0 `S1148 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES1157  1 e 1 @690 ]
 "32427
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @691 ]
 "38550
@@ -831,31 +841,31 @@ TMR2_RESERVED_4 36
 [v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
 "38942
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @794 ]
-[s S1443 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1469 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "38970
-[s S1449 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S1475 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "38970
-[s S1455 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1481 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
 "38970
-[u S1461 . 1 `S1443 1 . 1 0 `S1449 1 . 1 0 `S1455 1 . 1 0 ]
+[u S1487 . 1 `S1469 1 . 1 0 `S1475 1 . 1 0 `S1481 1 . 1 0 ]
 "38970
 "38970
-[v _T0CON0bits T0CON0bits `VES1461  1 e 1 @794 ]
+[v _T0CON0bits T0CON0bits `VES1487  1 e 1 @794 ]
 "39040
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @795 ]
 "40058
@@ -868,17 +878,17 @@ TMR2_RESERVED_4 36
 [v _PR2 PR2 `VEuc  1 e 1 @803 ]
 "40134
 [v _T2CON T2CON `VEuc  1 e 1 @804 ]
-[s S1907 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1771 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "40170
-[s S1911 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S1775 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
 "40170
-[s S1915 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S1779 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -887,7 +897,7 @@ TMR2_RESERVED_4 36
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
 "40170
-[s S1923 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1787 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -897,70 +907,70 @@ TMR2_RESERVED_4 36
 `uc 1 TMR2ON 1 0 :1:7 
 ]
 "40170
-[u S1932 . 1 `S1907 1 . 1 0 `S1911 1 . 1 0 `S1915 1 . 1 0 `S1923 1 . 1 0 ]
+[u S1796 . 1 `S1771 1 . 1 0 `S1775 1 . 1 0 `S1779 1 . 1 0 `S1787 1 . 1 0 ]
 "40170
 "40170
-[v _T2CONbits T2CONbits `VES1932  1 e 1 @804 ]
+[v _T2CONbits T2CONbits `VES1796  1 e 1 @804 ]
 "40280
 [v _T2HLT T2HLT `VEuc  1 e 1 @805 ]
-[s S1781 . 1 `uc 1 MODE 1 0 :5:0 
+[s S1645 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "40313
-[s S1786 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1650 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 `uc 1 MODE4 1 0 :1:4 
 ]
 "40313
-[s S1792 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S1656 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CKSYNC 1 0 :1:5 
 `uc 1 T2CKPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
 "40313
-[s S1797 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S1661 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
 "40313
-[u S1803 . 1 `S1781 1 . 1 0 `S1786 1 . 1 0 `S1792 1 . 1 0 `S1797 1 . 1 0 ]
+[u S1667 . 1 `S1645 1 . 1 0 `S1650 1 . 1 0 `S1656 1 . 1 0 `S1661 1 . 1 0 ]
 "40313
 "40313
-[v _T2HLTbits T2HLTbits `VES1803  1 e 1 @805 ]
+[v _T2HLTbits T2HLTbits `VES1667  1 e 1 @805 ]
 "40408
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @806 ]
 "40566
 [v _T2RST T2RST `VEuc  1 e 1 @807 ]
-[s S1869 . 1 `uc 1 RSEL 1 0 :5:0 
+[s S1733 . 1 `uc 1 RSEL 1 0 :5:0 
 ]
 "40593
-[s S1871 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S1735 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 `uc 1 RSEL4 1 0 :1:4 
 ]
 "40593
-[s S1877 . 1 `uc 1 T2RSEL 1 0 :5:0 
+[s S1741 . 1 `uc 1 T2RSEL 1 0 :5:0 
 ]
 "40593
-[s S1879 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S1743 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 `uc 1 T2RSEL4 1 0 :1:4 
 ]
 "40593
-[u S1885 . 1 `S1869 1 . 1 0 `S1871 1 . 1 0 `S1877 1 . 1 0 `S1879 1 . 1 0 ]
+[u S1749 . 1 `S1733 1 . 1 0 `S1735 1 . 1 0 `S1741 1 . 1 0 `S1743 1 . 1 0 ]
 "40593
 "40593
-[v _T2RSTbits T2RSTbits `VES1885  1 e 1 @807 ]
+[v _T2RSTbits T2RSTbits `VES1749  1 e 1 @807 ]
 "58452
 [v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
 "58514
@@ -991,7 +1001,7 @@ TMR2_RESERVED_4 36
 [v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
 "59692
 [v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
-[s S844 . 1 `uc 1 IOCCP0 1 0 :1:0 
+[s S845 . 1 `uc 1 IOCCP0 1 0 :1:0 
 `uc 1 IOCCP1 1 0 :1:1 
 `uc 1 IOCCP2 1 0 :1:2 
 `uc 1 IOCCP3 1 0 :1:3 
@@ -1001,11 +1011,11 @@ TMR2_RESERVED_4 36
 `uc 1 IOCCP7 1 0 :1:7 
 ]
 "59771
-[u S853 . 1 `S844 1 . 1 0 ]
+[u S854 . 1 `S845 1 . 1 0 ]
 "59771
 "59771
-[v _IOCCPbits IOCCPbits `VES853  1 e 1 @1045 ]
-[s S823 . 1 `uc 1 IOCCN0 1 0 :1:0 
+[v _IOCCPbits IOCCPbits `VES854  1 e 1 @1045 ]
+[s S824 . 1 `uc 1 IOCCN0 1 0 :1:0 
 `uc 1 IOCCN1 1 0 :1:1 
 `uc 1 IOCCN2 1 0 :1:2 
 `uc 1 IOCCN3 1 0 :1:3 
@@ -1015,11 +1025,11 @@ TMR2_RESERVED_4 36
 `uc 1 IOCCN7 1 0 :1:7 
 ]
 "59833
-[u S832 . 1 `S823 1 . 1 0 ]
+[u S833 . 1 `S824 1 . 1 0 ]
 "59833
 "59833
-[v _IOCCNbits IOCCNbits `VES832  1 e 1 @1046 ]
-[s S802 . 1 `uc 1 IOCCF0 1 0 :1:0 
+[v _IOCCNbits IOCCNbits `VES833  1 e 1 @1046 ]
+[s S803 . 1 `uc 1 IOCCF0 1 0 :1:0 
 `uc 1 IOCCF1 1 0 :1:1 
 `uc 1 IOCCF2 1 0 :1:2 
 `uc 1 IOCCF3 1 0 :1:3 
@@ -1029,15 +1039,15 @@ TMR2_RESERVED_4 36
 `uc 1 IOCCF7 1 0 :1:7 
 ]
 "59895
-[u S811 . 1 `S802 1 . 1 0 ]
+[u S812 . 1 `S803 1 . 1 0 ]
 "59895
 "59895
-[v _IOCCFbits IOCCFbits `VES811  1 e 1 @1047 ]
+[v _IOCCFbits IOCCFbits `VES812  1 e 1 @1047 ]
 "59940
 [v _WPUE WPUE `VEuc  1 e 1 @1057 ]
 "59961
 [v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
-[s S885 . 1 `uc 1 SWIE 1 0 :1:0 
+[s S896 . 1 `uc 1 SWIE 1 0 :1:0 
 `uc 1 HLVDIE 1 0 :1:1 
 `uc 1 OSFIE 1 0 :1:2 
 `uc 1 CSWIE 1 0 :1:3 
@@ -1047,11 +1057,11 @@ TMR2_RESERVED_4 36
 `uc 1 IOCIE 1 0 :1:7 
 ]
 "65084
-[u S894 . 1 `S885 1 . 1 0 ]
+[u S905 . 1 `S896 1 . 1 0 ]
 "65084
 "65084
-[v _PIE0bits PIE0bits `VES894  1 e 1 @1182 ]
-[s S1282 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+[v _PIE0bits PIE0bits `VES905  1 e 1 @1182 ]
+[s S1308 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
 `uc 1 SPI1TXIE 1 0 :1:1 
 `uc 1 SPI1IE 1 0 :1:2 
 `uc 1 TMR2IE 1 0 :1:3 
@@ -1061,10 +1071,10 @@ TMR2_RESERVED_4 36
 `uc 1 TMR0IE 1 0 :1:7 
 ]
 "65278
-[u S1291 . 1 `S1282 1 . 1 0 ]
+[u S1317 . 1 `S1308 1 . 1 0 ]
 "65278
 "65278
-[v _PIE3bits PIE3bits `VES1291  1 e 1 @1185 ]
+[v _PIE3bits PIE3bits `VES1317  1 e 1 @1185 ]
 [s S172 . 1 `uc 1 U1RXIE 1 0 :1:0 
 `uc 1 U1TXIE 1 0 :1:1 
 `uc 1 U1EIE 1 0 :1:2 
@@ -1107,6 +1117,8 @@ TMR2_RESERVED_4 36
 "54 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _IOCCF1_InterruptHandler IOCCF1_InterruptHandler `*.38(v  1 e 3 0 ]
 "55
+[v _IOCCF3_InterruptHandler IOCCF3_InterruptHandler `*.38(v  1 e 3 0 ]
+"56
 [v _IOCCF5_InterruptHandler IOCCF5_InterruptHandler `*.38(v  1 e 3 0 ]
 "60 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr0.c
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.38(v  1 e 3 0 ]
@@ -1116,18 +1128,18 @@ TMR2_RESERVED_4 36
 [v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
 "66
 [v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
-[s S973 . 1 `uc 1 perr 1 0 :1:0 
+[s S999 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "67
-[u S978 . 1 `S973 1 . 1 0 `uc 1 status 1 0 ]
-[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S978  1 s 8 uart1RxStatusBuffer ]
+[u S1004 . 1 `S999 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S1004  1 s 8 uart1RxStatusBuffer ]
 "68
 [v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
 "69
-[v _uart1RxLastError uart1RxLastError `VES978  1 s 1 uart1RxLastError ]
+[v _uart1RxLastError uart1RxLastError `VES1004  1 s 1 uart1RxLastError ]
 "74
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.38(v  1 e 3 0 ]
 "75
@@ -1158,9 +1170,9 @@ TMR2_RESERVED_4 36
 {
 "1393
 [v vfprintf@cfmt cfmt `*.32uc  1 a 2 156 ]
-[s S2474 _IO_FILE 0 ]
+[s S2489 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.2S2474  1 p 2 16 ]
+[v vfprintf@fp fp `*.2S2489  1 p 2 16 ]
 [v vfprintf@fmt fmt `*.32Cuc  1 p 2 18 ]
 [v vfprintf@ap ap `*.39*.39v  1 p 2 20 ]
 "1404
@@ -1175,9 +1187,9 @@ TMR2_RESERVED_4 36
 "694
 [v vfpfcnvrt@ct ct `[3]uc  1 a 3 12 ]
 [v vfpfcnvrt@c c `uc  1 a 1 15 ]
-[s S2474 _IO_FILE 0 ]
+[s S2489 _IO_FILE 0 ]
 "692
-[v vfpfcnvrt@fp fp `*.2S2474  1 p 2 146 ]
+[v vfpfcnvrt@fp fp `*.2S2489  1 p 2 146 ]
 [v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 148 ]
 [v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 150 ]
 "1387
@@ -1191,9 +1203,9 @@ TMR2_RESERVED_4 36
 [v utoa@i i `i  1 a 2 59 ]
 [v utoa@w w `i  1 a 2 49 ]
 [v utoa@p p `i  1 a 2 47 ]
-[s S2474 _IO_FILE 0 ]
+[s S2489 _IO_FILE 0 ]
 "615
-[v utoa@fp fp `*.2S2474  1 p 2 29 ]
+[v utoa@fp fp `*.2S2489  1 p 2 29 ]
 [v utoa@d d `uo  1 p 8 31 ]
 "641
 } 0
@@ -1255,9 +1267,9 @@ TMR2_RESERVED_4 36
 "334
 [v efgtoa@mode mode `uc  1 a 1 123 ]
 [v efgtoa@nmode nmode `uc  1 a 1 122 ]
-[s S2474 _IO_FILE 0 ]
+[s S2489 _IO_FILE 0 ]
 "332
-[v efgtoa@fp fp `*.2S2474  1 p 2 84 ]
+[v efgtoa@fp fp `*.2S2489  1 p 2 84 ]
 [v efgtoa@f f `d  1 p 4 86 ]
 [v efgtoa@c c `uc  1 p 1 90 ]
 "525
@@ -1292,9 +1304,9 @@ TMR2_RESERVED_4 36
 "74
 [v pad@w w `i  1 a 2 27 ]
 [v pad@i i `i  1 a 2 25 ]
-[s S2474 _IO_FILE 0 ]
+[s S2489 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.2S2474  1 p 2 18 ]
+[v pad@fp fp `*.2S2489  1 p 2 18 ]
 [v pad@buf buf `*.39uc  1 p 2 20 ]
 [v pad@p p `i  1 p 2 22 ]
 "95
@@ -1317,18 +1329,18 @@ TMR2_RESERVED_4 36
 [v fputs@c c `uc  1 a 1 15 ]
 "8
 [v fputs@s s `*.39Cuc  1 p 2 11 ]
-[u S2453 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S2456 _IO_FILE 11 `S2453 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputs@fp fp `*.2S2456  1 p 2 13 ]
+[u S2468 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S2471 _IO_FILE 11 `S2468 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.2S2471  1 p 2 13 ]
 "19
 } 0
 "8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 2 ]
-[u S2453 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S2456 _IO_FILE 11 `S2453 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.2S2456  1 p 2 4 ]
+[u S2468 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S2471 _IO_FILE 11 `S2468 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.2S2471  1 p 2 4 ]
 "24
 } 0
 "205 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/uart1.c
@@ -1351,9 +1363,9 @@ TMR2_RESERVED_4 36
 "3 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S2608 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S2623 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S2608  1 a 4 80 ]
+[v floorf@u u `S2623  1 a 4 80 ]
 "7
 [v floorf@m m `ul  1 a 4 74 ]
 "6
@@ -1361,21 +1373,21 @@ TMR2_RESERVED_4 36
 "3
 [v floorf@x x `f  1 p 4 64 ]
 "4
-[v floorf@F526 F526 `S2608  1 s 4 F526 ]
+[v floorf@F526 F526 `S2623  1 s 4 F526 ]
 "27
 } 0
 "4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S2608 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S2623 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S2608  1 a 4 10 ]
+[v ___fpclassifyf@u u `S2623  1 a 4 10 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 8 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 0 ]
 "5
-[v ___fpclassifyf@F465 F465 `S2608  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S2623  1 s 4 F465 ]
 "11
 } 0
 "43 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/fltol.c
@@ -1495,17 +1507,17 @@ TMR2_RESERVED_4 36
 "8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S2307 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2322 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S2312 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2315 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2307 1 fAsBytes 4 0 `S2312 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2315  1 a 4 33 ]
+[s S2327 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2330 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2322 1 fAsBytes 4 0 `S2327 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2330  1 a 4 33 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 27 ]
-[s S2383 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S2398 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2386 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2383 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2386  1 a 2 37 ]
+[u S2401 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2398 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2401  1 a 2 37 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 32 ]
 "11
@@ -1592,22 +1604,28 @@ TMR2_RESERVED_4 36
 {
 "96
 } 0
-"58 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
+"59 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"141
+"151
 } 0
-"205
+"250
 [v _IOCCF5_SetInterruptHandler IOCCF5_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCCF5_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
-"207
+"252
 } 0
-"175
+"220
+[v _IOCCF3_SetInterruptHandler IOCCF3_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCCF3_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"222
+} 0
+"190
 [v _IOCCF1_SetInterruptHandler IOCCF1_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCCF1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
-"177
+"192
 } 0
 "62 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
@@ -1733,35 +1751,45 @@ TMR2_RESERVED_4 36
 [v TMR0_DefaultInterruptHandler@F22304 F22304 `[8]uc  1 s 8 F22304 ]
 "155
 } 0
-"143 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
+"153 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
-"155
+"170
 } 0
-"190
+"235
 [v _IOCCF5_ISR IOCCF5_ISR `(v  1 e 1 0 ]
 {
-"200
+"245
 } 0
-"182
+"197
 [v _IOCCF1_DefaultInterruptHandler IOCCF1_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"185
+"200
 } 0
 "31 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/distance-sensor.c
 [v _handleEcho handleEcho `(v  1 e 1 0 ]
 {
 "43
 } 0
-"212 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
+"257 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _IOCCF5_DefaultInterruptHandler IOCCF5_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"260
+} 0
+"205
+[v _IOCCF3_ISR IOCCF3_ISR `(v  1 e 1 0 ]
 {
 "215
 } 0
-"160
+"227
+[v _IOCCF3_DefaultInterruptHandler IOCCF3_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"230
+} 0
+"175
 [v _IOCCF1_ISR IOCCF1_ISR `(v  1 e 1 0 ]
 {
-"170
+"185
 } 0
 "142 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr2.c
 [v _TMR2_WriteTimer TMR2_WriteTimer `(v  1 e 1 0 ]

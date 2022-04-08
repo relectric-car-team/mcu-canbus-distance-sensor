@@ -12,14 +12,14 @@
   0h - 3h		(dist/default/production/mcu-canbus-distance-sensor.production.hex)
   8h - Bh		(dist/default/production/mcu-canbus-distance-sensor.production.hex)
   18h - 1Dh		(dist/default/production/mcu-canbus-distance-sensor.production.hex)
-  3800h - 80B9h		(dist/default/production/mcu-canbus-distance-sensor.production.hex)
+  3800h - 8133h		(dist/default/production/mcu-canbus-distance-sensor.production.hex)
   200000h - 20001Fh		(dist/default/production/mcu-canbus-distance-sensor.production.hex)
   300000h - 300023h		(dist/default/production/mcu-canbus-distance-sensor.production.hex)
  Unused ranges:
   4h - 7h
   Ch - 17h
   1Eh - 37FFh
-  80BAh - 1FFFFFh
+  8134h - 1FFFFFh
   200020h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -1195,7 +1195,15 @@
 00008080 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00008090 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000080A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-000080B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
+000080B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000080C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000080D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000080E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000080F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00008100 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00008110 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00008120 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00008130 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00200010 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

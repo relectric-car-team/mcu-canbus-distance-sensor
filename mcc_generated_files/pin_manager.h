@@ -89,6 +89,30 @@
 #define RB1_SetAnalogMode()         do { ANSELBbits.ANSELB1 = 1; } while(0)
 #define RB1_SetDigitalMode()        do { ANSELBbits.ANSELB1 = 0; } while(0)
 
+// get/set RB4 procedures
+#define RB4_SetHigh()            do { LATBbits.LATB4 = 1; } while(0)
+#define RB4_SetLow()             do { LATBbits.LATB4 = 0; } while(0)
+#define RB4_Toggle()             do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0)
+#define RB4_GetValue()              PORTBbits.RB4
+#define RB4_SetDigitalInput()    do { TRISBbits.TRISB4 = 1; } while(0)
+#define RB4_SetDigitalOutput()   do { TRISBbits.TRISB4 = 0; } while(0)
+#define RB4_SetPullup()             do { WPUBbits.WPUB4 = 1; } while(0)
+#define RB4_ResetPullup()           do { WPUBbits.WPUB4 = 0; } while(0)
+#define RB4_SetAnalogMode()         do { ANSELBbits.ANSELB4 = 1; } while(0)
+#define RB4_SetDigitalMode()        do { ANSELBbits.ANSELB4 = 0; } while(0)
+
+// get/set RB5 procedures
+#define RB5_SetHigh()            do { LATBbits.LATB5 = 1; } while(0)
+#define RB5_SetLow()             do { LATBbits.LATB5 = 0; } while(0)
+#define RB5_Toggle()             do { LATBbits.LATB5 = ~LATBbits.LATB5; } while(0)
+#define RB5_GetValue()              PORTBbits.RB5
+#define RB5_SetDigitalInput()    do { TRISBbits.TRISB5 = 1; } while(0)
+#define RB5_SetDigitalOutput()   do { TRISBbits.TRISB5 = 0; } while(0)
+#define RB5_SetPullup()             do { WPUBbits.WPUB5 = 1; } while(0)
+#define RB5_ResetPullup()           do { WPUBbits.WPUB5 = 0; } while(0)
+#define RB5_SetAnalogMode()         do { ANSELBbits.ANSELB5 = 1; } while(0)
+#define RB5_SetDigitalMode()        do { ANSELBbits.ANSELB5 = 0; } while(0)
+
 // get/set TRIG2 aliases
 #define TRIG2_TRIS                 TRISCbits.TRISC0
 #define TRIG2_LAT                  LATCbits.LATC0
@@ -128,6 +152,46 @@
 #define ECHO2_SetOpenDrain()       do { ODCONCbits.ODCC1 = 1; } while(0)
 #define ECHO2_SetAnalogMode()      do { ANSELCbits.ANSELC1 = 1; } while(0)
 #define ECHO2_SetDigitalMode()     do { ANSELCbits.ANSELC1 = 0; } while(0)
+
+// get/set TRIG3 aliases
+#define TRIG3_TRIS                 TRISCbits.TRISC2
+#define TRIG3_LAT                  LATCbits.LATC2
+#define TRIG3_PORT                 PORTCbits.RC2
+#define TRIG3_WPU                  WPUCbits.WPUC2
+#define TRIG3_OD                   ODCONCbits.ODCC2
+#define TRIG3_ANS                  ANSELCbits.ANSELC2
+#define TRIG3_SetHigh()            do { LATCbits.LATC2 = 1; } while(0)
+#define TRIG3_SetLow()             do { LATCbits.LATC2 = 0; } while(0)
+#define TRIG3_Toggle()             do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0)
+#define TRIG3_GetValue()           PORTCbits.RC2
+#define TRIG3_SetDigitalInput()    do { TRISCbits.TRISC2 = 1; } while(0)
+#define TRIG3_SetDigitalOutput()   do { TRISCbits.TRISC2 = 0; } while(0)
+#define TRIG3_SetPullup()          do { WPUCbits.WPUC2 = 1; } while(0)
+#define TRIG3_ResetPullup()        do { WPUCbits.WPUC2 = 0; } while(0)
+#define TRIG3_SetPushPull()        do { ODCONCbits.ODCC2 = 0; } while(0)
+#define TRIG3_SetOpenDrain()       do { ODCONCbits.ODCC2 = 1; } while(0)
+#define TRIG3_SetAnalogMode()      do { ANSELCbits.ANSELC2 = 1; } while(0)
+#define TRIG3_SetDigitalMode()     do { ANSELCbits.ANSELC2 = 0; } while(0)
+
+// get/set ECHO3 aliases
+#define ECHO3_TRIS                 TRISCbits.TRISC3
+#define ECHO3_LAT                  LATCbits.LATC3
+#define ECHO3_PORT                 PORTCbits.RC3
+#define ECHO3_WPU                  WPUCbits.WPUC3
+#define ECHO3_OD                   ODCONCbits.ODCC3
+#define ECHO3_ANS                  ANSELCbits.ANSELC3
+#define ECHO3_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
+#define ECHO3_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
+#define ECHO3_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
+#define ECHO3_GetValue()           PORTCbits.RC3
+#define ECHO3_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
+#define ECHO3_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
+#define ECHO3_SetPullup()          do { WPUCbits.WPUC3 = 1; } while(0)
+#define ECHO3_ResetPullup()        do { WPUCbits.WPUC3 = 0; } while(0)
+#define ECHO3_SetPushPull()        do { ODCONCbits.ODCC3 = 0; } while(0)
+#define ECHO3_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
+#define ECHO3_SetAnalogMode()      do { ANSELCbits.ANSELC3 = 1; } while(0)
+#define ECHO3_SetDigitalMode()     do { ANSELCbits.ANSELC3 = 0; } while(0)
 
 // get/set TRIG aliases
 #define TRIG_TRIS                 TRISCbits.TRISC4
@@ -276,6 +340,90 @@ extern void (*IOCCF1_InterruptHandler)(void);
 
 */
 void IOCCF1_DefaultInterruptHandler(void);
+
+
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Interrupt on Change Handler for the IOCCF3 pin functionality
+ * @Example
+    IOCCF3_ISR();
+ */
+void IOCCF3_ISR(void);
+
+/**
+  @Summary
+    Interrupt Handler Setter for IOCCF3 pin interrupt-on-change functionality
+
+  @Description
+    Allows selecting an interrupt handler for IOCCF3 at application runtime
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    InterruptHandler function pointer.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCCF3_SetInterruptHandler(MyInterruptHandler);
+
+*/
+void IOCCF3_SetInterruptHandler(void (* InterruptHandler)(void));
+
+/**
+  @Summary
+    Dynamic Interrupt Handler for IOCCF3 pin
+
+  @Description
+    This is a dynamic interrupt handler to be used together with the IOCCF3_SetInterruptHandler() method.
+    This handler is called every time the IOCCF3 ISR is executed and allows any function to be registered at runtime.
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCCF3_SetInterruptHandler(IOCCF3_InterruptHandler);
+
+*/
+extern void (*IOCCF3_InterruptHandler)(void);
+
+/**
+  @Summary
+    Default Interrupt Handler for IOCCF3 pin
+
+  @Description
+    This is a predefined interrupt handler to be used together with the IOCCF3_SetInterruptHandler() method.
+    This handler is called every time the IOCCF3 ISR is executed. 
+    
+  @Preconditions
+    Pin Manager intializer called
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    PIN_MANAGER_Initialize();
+    IOCCF3_SetInterruptHandler(IOCCF3_DefaultInterruptHandler);
+
+*/
+void IOCCF3_DefaultInterruptHandler(void);
 
 
 /**

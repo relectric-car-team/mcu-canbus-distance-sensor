@@ -52,6 +52,7 @@
 
 
 void (*IOCCF1_InterruptHandler)(void);
+void (*IOCCF3_InterruptHandler)(void);
 void (*IOCCF5_InterruptHandler)(void);
 
 
@@ -69,14 +70,14 @@ void PIN_MANAGER_Initialize(void)
     */
     TRISE = 0x08;
     TRISA = 0xFF;
-    TRISB = 0xFD;
-    TRISC = 0xEE;
+    TRISB = 0xED;
+    TRISC = 0xEA;
 
     /**
     ANSELx registers
     */
-    ANSELC = 0xCC;
-    ANSELB = 0xEC;
+    ANSELC = 0xC0;
+    ANSELB = 0xCC;
     ANSELA = 0xFE;
 
     /**
@@ -116,13 +117,19 @@ void PIN_MANAGER_Initialize(void)
     //interrupt on change for group IOCCF - flag
     IOCCFbits.IOCCF1 = 0;
     //interrupt on change for group IOCCF - flag
+    IOCCFbits.IOCCF3 = 0;
+    //interrupt on change for group IOCCF - flag
     IOCCFbits.IOCCF5 = 0;
     //interrupt on change for group IOCCN - negative
     IOCCNbits.IOCCN1 = 1;
     //interrupt on change for group IOCCN - negative
+    IOCCNbits.IOCCN3 = 1;
+    //interrupt on change for group IOCCN - negative
     IOCCNbits.IOCCN5 = 1;
     //interrupt on change for group IOCCP - positive
     IOCCPbits.IOCCP1 = 1;
+    //interrupt on change for group IOCCP - positive
+    IOCCPbits.IOCCP3 = 1;
     //interrupt on change for group IOCCP - positive
     IOCCPbits.IOCCP5 = 1;
 
@@ -130,6 +137,7 @@ void PIN_MANAGER_Initialize(void)
 
     // register default IOC callback functions at runtime; use these methods to register a custom function
     IOCCF1_SetInterruptHandler(IOCCF1_DefaultInterruptHandler);
+    IOCCF3_SetInterruptHandler(IOCCF3_DefaultInterruptHandler);
     IOCCF5_SetInterruptHandler(IOCCF5_DefaultInterruptHandler);
    
     // Enable IOCI interrupt 
@@ -137,6 +145,8 @@ void PIN_MANAGER_Initialize(void)
     
 	
     RB1PPS = 0x20;   //RB1->UART1:TX1;    
+    CANRXPPS = 0x0D;   //RB5->CAN1:CANRX;    
+    RB4PPS = 0x46;   //RB4->CAN1:CANTX;    
     U1RXPPS = 0x08;   //RB0->UART1:RX1;    
 }
   
@@ -146,6 +156,11 @@ void PIN_MANAGER_IOC(void)
     if(IOCCFbits.IOCCF1 == 1)
     {
         IOCCF1_ISR();  
+    }	
+	// interrupt on change for pin IOCCF3
+    if(IOCCFbits.IOCCF3 == 1)
+    {
+        IOCCF3_ISR();  
     }	
 	// interrupt on change for pin IOCCF5
     if(IOCCFbits.IOCCF5 == 1)
@@ -182,6 +197,36 @@ void IOCCF1_SetInterruptHandler(void (* InterruptHandler)(void)){
 void IOCCF1_DefaultInterruptHandler(void){
     // add your IOCCF1 interrupt custom code
     // or set custom function using IOCCF1_SetInterruptHandler()
+}
+
+/**
+   IOCCF3 Interrupt Service Routine
+*/
+void IOCCF3_ISR(void) {
+
+    // Add custom IOCCF3 code
+
+    // Call the interrupt handler for the callback registered at runtime
+    if(IOCCF3_InterruptHandler)
+    {
+        IOCCF3_InterruptHandler();
+    }
+    IOCCFbits.IOCCF3 = 0;
+}
+
+/**
+  Allows selecting an interrupt handler for IOCCF3 at application runtime
+*/
+void IOCCF3_SetInterruptHandler(void (* InterruptHandler)(void)){
+    IOCCF3_InterruptHandler = InterruptHandler;
+}
+
+/**
+  Default interrupt handler for IOCCF3
+*/
+void IOCCF3_DefaultInterruptHandler(void){
+    // add your IOCCF3 interrupt custom code
+    // or set custom function using IOCCF3_SetInterruptHandler()
 }
 
 /**
