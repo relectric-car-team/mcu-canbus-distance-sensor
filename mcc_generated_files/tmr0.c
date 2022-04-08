@@ -50,31 +50,39 @@
 
 #include <xc.h>
 #include "tmr0.h"
-
+#include "can1.h"
+#include "can_types.h"
 
 /**
   Section: TMR0 APIs
 */
 
+void (*TMR0_InterruptHandler)(void);
 
 void TMR0_Initialize(void)
 {
     // Set TMR0 to the options selected in the User Interface
 
-    // T0CS LFINTOSC; T0CKPS 1:4; T0ASYNC synchronised; 
-    T0CON1 = 0x82;
+    // T0CS FOSC/4; T0CKPS 1:32768; T0ASYNC not_synchronised; 
+    T0CON1 = 0x5F;
 
-    // TMR0H 253; 
-    TMR0H = 0xFD;
+    // TMR0H 121; 
+    TMR0H = 0x79;
 
     // TMR0L 0; 
     TMR0L = 0x00;
 
-    // Clearing IF flag
+    // Clear Interrupt flag before enabling the interrupt
     PIR3bits.TMR0IF = 0;
 
-    // T0OUTPS 1:4; T0EN enabled; T016BIT 8-bit; 
-    T0CON0 = 0x83;
+    // Enabling TMR0 interrupt.
+    PIE3bits.TMR0IE = 1;
+
+    // Set Default Interrupt Handler
+    TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
+
+    // T0OUTPS 1:2; T0EN enabled; T016BIT 8-bit; 
+    T0CON0 = 0x81;
 }
 
 void TMR0_StartTimer(void)
@@ -111,11 +119,41 @@ void TMR0_Reload(uint8_t periodVal)
    TMR0H = periodVal;
 }
 
-bool TMR0_HasOverflowOccured(void)
+void TMR0_ISR(void)
 {
-    // check if  overflow has occurred by checking the TMRIF bit
-    return(PIR3bits.TMR0IF);
+    // clear the TMR0 interrupt flag
+    PIR3bits.TMR0IF = 0;
+    if(TMR0_InterruptHandler)
+    {
+        TMR0_InterruptHandler();
+    }
+
+    // add your TMR0 interrupt custom code
 }
+
+
+void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
+    TMR0_InterruptHandler = InterruptHandler;
+}
+
+void TMR0_DefaultInterruptHandler(void){
+    // add your TMR0 interrupt custom code
+    // or set custom function using TMR0_SetInterruptHandler()
+        CAN_MSG_OBJ Transmission;  //create the CAN message object
+    uint8_t Transmit_Data[8]={0x00,0x11,0x22,0x33,0x44,0x55,0x66,0x77}; // data bytes
+    Transmission.field.brs=CAN_BRS_MODE; //Transmit the data bytes at data bit rate
+    Transmission.field.dlc=DLC_8; //8 data bytes
+    Transmission.field.formatType=CAN_FD_FORMAT; //CAN FD frames 
+    Transmission.field.frameType=CAN_FRAME_DATA; //Data frame
+    Transmission.field.idType=CAN_FRAME_STD; //Standard ID
+    Transmission.msgId=0x100; //ID of 0x100
+    Transmission.data=Transmit_Data; //transmit the data from the data bytes
+    if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))//ensure that the TXQ has space for a message
+                {
+                    CAN1_Transmit(TXQ, &Transmission); //transmit frame
+                }
+}
+
 /**
   End of File
 */

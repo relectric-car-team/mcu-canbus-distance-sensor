@@ -3,61 +3,18 @@
 [d edition pro ]
 [d chip 18F27Q84 ]
 [d frameptr 1249 ]
-"105 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/can1.c
-[e E22428 . `uc
+"101 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/can1.c
+[e E22394 . `uc
 FIFO1 1
+FIFO2 2
 ]
-"182
-[e E22355 . `uc
-CAN_OP_MODE_REQUEST_SUCCESS 0
-CAN_OP_MODE_REQUEST_FAIL 1
-CAN_OP_MODE_SYS_ERROR_OCCURED 2
-]
-[e E22345 . `uc
-CAN_NORMAL_FD_MODE 0
-CAN_DISABLE_MODE 1
-CAN_INTERNAL_LOOPBACK_MODE 2
-CAN_LISTEN_ONLY_MODE 3
-CAN_CONFIGURATION_MODE 4
-CAN_EXTERNAL_LOOPBACK_MODE 5
-CAN_NORMAL_2_0_MODE 6
-CAN_RESTRICTED_OPERATION_MODE 7
-]
-"244
-[e E22423 . `uc
-CAN_RX_MSG_NOT_AVAILABLE 0
-CAN_RX_MSG_AVAILABLE 1
-CAN_RX_MSG_OVERFLOW 8
-]
-"260
-[e E22327 . `uc
-CAN_FRAME_STD 0
-CAN_FRAME_EXT 1
-]
-"261
-[e E22331 . `uc
-CAN_FRAME_DATA 0
-CAN_FRAME_RTR 1
-]
-"262
-[e E22323 . `uc
+"117
+[e E22332 . `uc
 CAN_NON_BRS_MODE 0
 CAN_BRS_MODE 1
 ]
-"370
-[e E22360 . `uc
-CAN_TX_FIFO_FULL 0
-CAN_TX_FIFO_AVAILABLE 1
-]
-"416
-[e E22339 . `uc
-CAN_TX_MSG_REQUEST_SUCCESS 0
-CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
-CAN_TX_MSG_REQUEST_BRS_ERROR 2
-CAN_TX_MSG_REQUEST_FIFO_FULL 3
-]
-"427
-[e E22364 . `uc
+"118
+[e E22373 . `uc
 DLC_0 0
 DLC_1 1
 DLC_2 2
@@ -75,16 +32,114 @@ DLC_32 13
 DLC_48 14
 DLC_64 15
 ]
-[e E22335 . `uc
+"119
+[e E22344 . `uc
 CAN_2_0_FORMAT 0
 CAN_FD_FORMAT 1
 ]
-"445
-[e E22382 . `uc
+"120
+[e E22340 . `uc
+CAN_FRAME_DATA 0
+CAN_FRAME_RTR 1
+]
+"121
+[e E22336 . `uc
+CAN_FRAME_STD 0
+CAN_FRAME_EXT 1
+]
+"124
+[e E22369 . `uc
+CAN_TX_FIFO_FULL 0
+CAN_TX_FIFO_AVAILABLE 1
+]
+[e E22391 . `uc
 TXQ 0
 ]
-"88 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/tmr2.c
-[e E22141 . `uc
+"126
+[e E22348 . `uc
+CAN_TX_MSG_REQUEST_SUCCESS 0
+CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
+CAN_TX_MSG_REQUEST_BRS_ERROR 2
+CAN_TX_MSG_REQUEST_FIFO_FULL 3
+]
+"276
+[e E22364 . `uc
+CAN_OP_MODE_REQUEST_SUCCESS 0
+CAN_OP_MODE_REQUEST_FAIL 1
+CAN_OP_MODE_SYS_ERROR_OCCURED 2
+]
+[e E22354 . `uc
+CAN_NORMAL_FD_MODE 0
+CAN_DISABLE_MODE 1
+CAN_INTERNAL_LOOPBACK_MODE 2
+CAN_LISTEN_ONLY_MODE 3
+CAN_CONFIGURATION_MODE 4
+CAN_EXTERNAL_LOOPBACK_MODE 5
+CAN_NORMAL_2_0_MODE 6
+CAN_RESTRICTED_OPERATION_MODE 7
+]
+"338
+[e E22444 . `uc
+CAN_RX_MSG_NOT_AVAILABLE 0
+CAN_RX_MSG_AVAILABLE 1
+CAN_RX_MSG_OVERFLOW 8
+]
+"144 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr0.c
+[e E22181 . `uc
+CAN_NON_BRS_MODE 0
+CAN_BRS_MODE 1
+]
+"145
+[e E22222 . `uc
+DLC_0 0
+DLC_1 1
+DLC_2 2
+DLC_3 3
+DLC_4 4
+DLC_5 5
+DLC_6 6
+DLC_7 7
+DLC_8 8
+DLC_12 9
+DLC_16 10
+DLC_20 11
+DLC_24 12
+DLC_32 13
+DLC_48 14
+DLC_64 15
+]
+"146
+[e E22193 . `uc
+CAN_2_0_FORMAT 0
+CAN_FD_FORMAT 1
+]
+"147
+[e E22189 . `uc
+CAN_FRAME_DATA 0
+CAN_FRAME_RTR 1
+]
+"148
+[e E22185 . `uc
+CAN_FRAME_STD 0
+CAN_FRAME_EXT 1
+]
+"151
+[e E22218 . `uc
+CAN_TX_FIFO_FULL 0
+CAN_TX_FIFO_AVAILABLE 1
+]
+[e E22240 . `uc
+TXQ 0
+]
+"153
+[e E22197 . `uc
+CAN_TX_MSG_REQUEST_SUCCESS 0
+CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
+CAN_TX_MSG_REQUEST_BRS_ERROR 2
+CAN_TX_MSG_REQUEST_FIFO_FULL 3
+]
+"88 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr2.c
+[e E22150 . `uc
 TMR2_ROP_STARTS_TMRON 0
 TMR2_ROP_STARTS_TMRON_ERSHIGH 1
 TMR2_ROP_STARTS_TMRON_ERSLOW 2
@@ -108,7 +163,7 @@ TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
 TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
 ]
 "94
-[e E22164 . `uc
+[e E22173 . `uc
 TMR2_T2INPPS 0
 TMR2_RESERVED 1
 TMR2_T4POSTSCALED 2
@@ -147,13 +202,14 @@ TMR2_UART5_RX_EDGE 34
 TMR2_UART5_TX_EDGE 35
 TMR2_RESERVED_4 36
 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+"7 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+"7 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
-"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+"72 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
 "332
 [v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
@@ -163,63 +219,63 @@ TMR2_RESERVED_4 36
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 "1390
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+"15 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+"62 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+"3 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
-"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+"43 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+"86 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+"54 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+"62 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+"19 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+"5 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/isupper.c
 [v _isupper isupper `(i  1 e 2 0 ]
-"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lodiv.c
+"9 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/lodiv.c
 [v ___lodiv __lodiv `(uo  1 e 8 0 ]
-"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lomod.c
+"9 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/lomod.c
 [v ___lomod __lomod `(uo  1 e 8 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+"8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+"8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+"5 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/printf.c
 [v _printf printf `(i  1 e 2 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"10 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+"11 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+"8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+"3 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/strcpy.c
 [v _strcpy strcpy `(*.39uc  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+"5 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
-"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+"3 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/strncmp.c
 [v _strncmp strncmp `(i  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/tolower.c
 [v _tolower tolower `(i  1 e 2 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+"15 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+"91 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+"10 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"24 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\distance-sensor.c
+"24 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/distance-sensor.c
 [v _sendTrigger sendTrigger `(v  1 e 1 0 ]
 "31
 [v _handleEcho handleEcho `(v  1 e 1 0 ]
@@ -231,71 +287,98 @@ TMR2_RESERVED_4 36
 [v _getTimerTicks getTimerTicks `(us  1 e 2 0 ]
 "65
 [v _calculateDistance calculateDistance `(f  1 e 4 0 ]
-"14 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\main.c
+"14 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/main.c
 [v _main main `(v  1 e 1 0 ]
-"114 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/can1.c
+"113 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/can1.c
+[v _DefaultFIFO1NotEmptyHandler DefaultFIFO1NotEmptyHandler `(v  1 s 1 DefaultFIFO1NotEmptyHandler ]
+"131
+[v _DefaultFIFO2NotEmptyHandler DefaultFIFO2NotEmptyHandler `(v  1 s 1 DefaultFIFO2NotEmptyHandler ]
+"150
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
-"124
-[v _CAN1_RX_FIFO_Configuration CAN1_RX_FIFO_Configuration `(v  1 s 1 CAN1_RX_FIFO_Configuration ]
-"140
-[v _CAN1_RX_FIFO_FilterMaskConfiguration CAN1_RX_FIFO_FilterMaskConfiguration `(v  1 s 1 CAN1_RX_FIFO_FilterMaskConfiguration ]
-"144
-[v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
 "160
+[v _CAN1_RX_FIFO_Configuration CAN1_RX_FIFO_Configuration `(v  1 s 1 CAN1_RX_FIFO_Configuration ]
+"195
+[v _CAN1_RX_FIFO_FilterMaskConfiguration CAN1_RX_FIFO_FilterMaskConfiguration `(v  1 s 1 CAN1_RX_FIFO_FilterMaskConfiguration ]
+"221
+[v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
+"237
 [v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
-"177
+"271
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
-"205
-[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22355  1 e 1 0 ]
-"234
-[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22345  1 e 1 0 ]
-"239
+"299
+[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22364  1 e 1 0 ]
+"328
+[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22354  1 e 1 0 ]
+[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22354  1 e 1 0 ]
+"333
 [v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
-"244
-[v _GetRxFifoStatus GetRxFifoStatus `(E22423  1 s 1 GetRxFifoStatus ]
-"249
+"338
+[v _GetRxFifoStatus GetRxFifoStatus `(E22444  1 s 1 GetRxFifoStatus ]
+"343
 [v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
-"365
+"377
+[v _Receive Receive `(a  1 s 1 Receive ]
+"409
+[v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
+"444
+[v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
+"487
 [v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
-"370
-[v _GetTxFifoStatus GetTxFifoStatus `(E22360  1 s 1 GetTxFifoStatus ]
-"375
+"492
+[v _GetTxFifoStatus GetTxFifoStatus `(E22369  1 s 1 GetTxFifoStatus ]
+"497
 [v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
-"416
-[v _ValidateTransmission ValidateTransmission `(E22339  1 s 1 ValidateTransmission ]
-"484
+"538
+[v _ValidateTransmission ValidateTransmission `(E22348  1 s 1 ValidateTransmission ]
+"567
+[v _CAN1_Transmit CAN1_Transmit `(E22348  1 e 1 0 ]
+"589
+[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22369  1 e 1 0 ]
+"606
 [v _CAN1_IsRxErrorPassive CAN1_IsRxErrorPassive `(a  1 e 1 0 ]
-"499
+"621
 [v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
-"52 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/interrupt_manager.c
+"645
+[v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
+"650
+[v _CAN1_SetFIFO2NotEmptyHandler CAN1_SetFIFO2NotEmptyHandler `(v  1 e 1 0 ]
+"656
+[v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
+"52 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "58
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"50 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/mcc.c
+"50 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "62
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "76
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"58 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/pin_manager.c
+"58 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"145
+"143
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
-"162
+"160
 [v _IOCCF1_ISR IOCCF1_ISR `(v  1 e 1 0 ]
-"177
+"175
 [v _IOCCF1_SetInterruptHandler IOCCF1_SetInterruptHandler `(v  1 e 1 0 ]
-"184
+"182
 [v _IOCCF1_DefaultInterruptHandler IOCCF1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"192
+"190
 [v _IOCCF5_ISR IOCCF5_ISR `(v  1 e 1 0 ]
-"207
+"205
 [v _IOCCF5_SetInterruptHandler IOCCF5_SetInterruptHandler `(v  1 e 1 0 ]
-"214
+"212
 [v _IOCCF5_DefaultInterruptHandler IOCCF5_DefaultInterruptHandler `(v  1 e 1 0 ]
-"60 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/tmr0.c
+"62 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
-"62 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/tmr2.c
+"122
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"135
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"139
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"62 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "100
 [v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
@@ -317,7 +400,7 @@ TMR2_RESERVED_4 36
 [v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
 "157
 [v _TMR2_HasOverflowOccured TMR2_HasOverflowOccured `(a  1 e 1 0 ]
-"82 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/uart1.c
+"82 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 "169
 [v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
@@ -343,9 +426,17 @@ TMR2_RESERVED_4 36
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
 "270
 [v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
-"498 C:\Users\sahil\relectric\mcu-canbus-distance-sensor/mcc_generated_files/uart1.h
+"498 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/uart1.h
 [v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.38(v  1 e 3 0 ]
-[s S1075 . 1 `uc 1 SWIF 1 0 :1:0 
+"55 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+[s S1341 . 1 `uc 1 SWIF 1 0 :1:0 
 `uc 1 HLVDIF 1 0 :1:1 
 `uc 1 OSFIF 1 0 :1:2 
 `uc 1 CSWIF 1 0 :1:3 
@@ -354,10 +445,10 @@ TMR2_RESERVED_4 36
 `uc 1 CANIF 1 0 :1:6 
 `uc 1 IOCIF 1 0 :1:7 
 ]
-"533 C:/Users/sahil/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f27q84.h
-[u S1084 . 1 `S1075 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES1084  1 e 1 @1198 ]
-[s S1124 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+"533 /Users/faisal/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8/pic/include/proc/pic18f27q84.h
+[u S1350 . 1 `S1341 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES1350  1 e 1 @1198 ]
+[s S1303 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
 `uc 1 SPI1TXIF 1 0 :1:1 
 `uc 1 SPI1IF 1 0 :1:2 
 `uc 1 TMR2IF 1 0 :1:3 
@@ -367,9 +458,9 @@ TMR2_RESERVED_4 36
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "727
-[u S1133 . 1 `S1124 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES1133  1 e 1 @1201 ]
-[s S807 . 1 `uc 1 U1RXIF 1 0 :1:0 
+[u S1312 . 1 `S1303 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1312  1 e 1 @1201 ]
+[s S151 . 1 `uc 1 U1RXIF 1 0 :1:0 
 `uc 1 U1TXIF 1 0 :1:1 
 `uc 1 U1EIF 1 0 :1:2 
 `uc 1 U1IF 1 0 :1:3 
@@ -379,8 +470,8 @@ TMR2_RESERVED_4 36
 `uc 1 PWM1IF 1 0 :1:7 
 ]
 "789
-[u S816 . 1 `S807 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES816  1 e 1 @1202 ]
+[u S160 . 1 `S151 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES160  1 e 1 @1202 ]
 "1339
 [v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
 "1405
@@ -399,7 +490,7 @@ TMR2_RESERVED_4 36
 [v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
 "1625
 [v _LATC LATC `VEuc  1 e 1 @1216 ]
-[s S1277 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1646 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -409,8 +500,8 @@ TMR2_RESERVED_4 36
 `uc 1 LATC7 1 0 :1:7 
 ]
 "1642
-[u S1286 . 1 `S1277 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1286  1 e 1 @1216 ]
+[u S1655 . 1 `S1646 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1655  1 e 1 @1216 ]
 "1678
 [v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
 "1687
@@ -425,7 +516,7 @@ TMR2_RESERVED_4 36
 [v _TRISC TRISC `VEuc  1 e 1 @1224 ]
 "1873
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S1300 . 1 `uc 1 RC0 1 0 :1:0 
+[s S1669 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -435,9 +526,9 @@ TMR2_RESERVED_4 36
 `uc 1 RC7 1 0 :1:7 
 ]
 "2035
-[u S1309 . 1 `S1300 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES1309  1 e 1 @1232 ]
-[s S1013 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[u S1678 . 1 `S1669 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1678  1 e 1 @1232 ]
+[s S1232 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -446,11 +537,11 @@ TMR2_RESERVED_4 36
 `uc 1 GIE 1 0 :1:7 
 ]
 "2121
-[s S1021 . 1 `uc 1 . 1 0 :7:0 
+[s S1240 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1024 . 1 `S1013 1 . 1 0 `S1021 1 . 1 0 ]
-[v _INTCON0bits INTCON0bits `VES1024  1 e 1 @1238 ]
+[u S1243 . 1 `S1232 1 . 1 0 `S1240 1 . 1 0 ]
+[v _INTCON0bits INTCON0bits `VES1243  1 e 1 @1238 ]
 "5336
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
 "5476
@@ -465,7 +556,7 @@ TMR2_RESERVED_4 36
 [v _C1CONL C1CONL `VEuc  1 e 1 @256 ]
 "9014
 [v _C1CONH C1CONH `VEuc  1 e 1 @257 ]
-[s S51 . 1 `uc 1 WAKFIL 1 0 :1:0 
+[s S224 . 1 `uc 1 WAKFIL 1 0 :1:0 
 `uc 1 WFT 1 0 :2:1 
 `uc 1 BUSY 1 0 :1:3 
 `uc 1 BRSDIS 1 0 :1:4 
@@ -474,15 +565,15 @@ TMR2_RESERVED_4 36
 `uc 1 ON 1 0 :1:7 
 ]
 "9035
-[s S59 . 1 `uc 1 . 1 0 :1:0 
+[s S232 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 WFT0 1 0 :1:1 
 `uc 1 WFT1 1 0 :1:2 
 ]
-[u S63 . 1 `S51 1 . 1 0 `S59 1 . 1 0 ]
-[v _C1CONHbits C1CONHbits `VES63  1 e 1 @257 ]
+[u S236 . 1 `S224 1 . 1 0 `S232 1 . 1 0 ]
+[v _C1CONHbits C1CONHbits `VES236  1 e 1 @257 ]
 "9085
 [v _C1CONU C1CONU `VEuc  1 e 1 @258 ]
-[s S154 . 1 `uc 1 RTXAT 1 0 :1:0 
+[s S327 . 1 `uc 1 RTXAT 1 0 :1:0 
 `uc 1 ESIGM 1 0 :1:1 
 `uc 1 SERR2LOM 1 0 :1:2 
 `uc 1 STEF 1 0 :1:3 
@@ -490,19 +581,19 @@ TMR2_RESERVED_4 36
 `uc 1 OPMOD 1 0 :3:5 
 ]
 "9106
-[s S161 . 1 `uc 1 . 1 0 :5:0 
+[s S334 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 OPMOD0 1 0 :1:5 
 `uc 1 OPMOD1 1 0 :1:6 
 `uc 1 OPMOD2 1 0 :1:7 
 ]
-[u S166 . 1 `S154 1 . 1 0 `S161 1 . 1 0 ]
-[v _C1CONUbits C1CONUbits `VES166  1 e 1 @258 ]
-[s S105 . 1 `uc 1 REQOP 1 0 :3:0 
+[u S339 . 1 `S327 1 . 1 0 `S334 1 . 1 0 ]
+[v _C1CONUbits C1CONUbits `VES339  1 e 1 @258 ]
+[s S278 . 1 `uc 1 REQOP 1 0 :3:0 
 `uc 1 ABAT 1 0 :1:3 
 `uc 1 TXBWS 1 0 :4:4 
 ]
 "9178
-[s S109 . 1 `uc 1 REQOP0 1 0 :1:0 
+[s S282 . 1 `uc 1 REQOP0 1 0 :1:0 
 `uc 1 REQOP1 1 0 :1:1 
 `uc 1 REQOP2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -511,8 +602,8 @@ TMR2_RESERVED_4 36
 `uc 1 TXBWS2 1 0 :1:6 
 `uc 1 TXBWS3 1 0 :1:7 
 ]
-[u S118 . 1 `S105 1 . 1 0 `S109 1 . 1 0 ]
-[v _C1CONTbits C1CONTbits `VES118  1 e 1 @259 ]
+[u S291 . 1 `S278 1 . 1 0 `S282 1 . 1 0 ]
+[v _C1CONTbits C1CONTbits `VES291  1 e 1 @259 ]
 "9233
 [v _C1NBTCFGL C1NBTCFGL `VEuc  1 e 1 @260 ]
 "9297
@@ -521,7 +612,19 @@ TMR2_RESERVED_4 36
 [v _C1NBTCFGU C1NBTCFGU `VEuc  1 e 1 @262 ]
 "9431
 [v _C1NBTCFGT C1NBTCFGT `VEuc  1 e 1 @263 ]
-[s S135 . 1 `uc 1 . 1 0 :2:0 
+"9501
+[v _C1DBTCFGL C1DBTCFGL `VEuc  1 e 1 @264 ]
+"9547
+[v _C1DBTCFGH C1DBTCFGH `VEuc  1 e 1 @265 ]
+"9593
+[v _C1DBTCFGU C1DBTCFGU `VEuc  1 e 1 @266 ]
+"9645
+[v _C1DBTCFGT C1DBTCFGT `VEuc  1 e 1 @267 ]
+"9773
+[v _C1TDCH C1TDCH `VEuc  1 e 1 @269 ]
+"9837
+[v _C1TDCU C1TDCU `VEuc  1 e 1 @270 ]
+[s S308 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIF 1 0 :1:2 
 `uc 1 RXOVIF 1 0 :1:3 
 `uc 1 SERRIF 1 0 :1:4 
@@ -530,9 +633,18 @@ TMR2_RESERVED_4 36
 `uc 1 IVMIF 1 0 :1:7 
 ]
 "10467
-[u S143 . 1 `S135 1 . 1 0 ]
-[v _C1INTHbits C1INTHbits `VES143  1 e 1 @285 ]
-[s S262 . 1 `uc 1 . 1 0 :2:0 
+[u S316 . 1 `S308 1 . 1 0 ]
+[v _C1INTHbits C1INTHbits `VES316  1 e 1 @285 ]
+[s S136 . 1 `uc 1 TXIE 1 0 :1:0 
+`uc 1 RXIE 1 0 :1:1 
+`uc 1 TBCIE 1 0 :1:2 
+`uc 1 MODIE 1 0 :1:3 
+`uc 1 TEFIE 1 0 :1:4 
+]
+"10516
+[u S142 . 1 `S136 1 . 1 0 ]
+[v _C1INTUbits C1INTUbits `VES142  1 e 1 @286 ]
+[s S383 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIE 1 0 :1:2 
 `uc 1 RXOVIE 1 0 :1:3 
 `uc 1 SERRIE 1 0 :1:4 
@@ -541,9 +653,9 @@ TMR2_RESERVED_4 36
 `uc 1 IVMIE 1 0 :1:7 
 ]
 "10562
-[u S270 . 1 `S262 1 . 1 0 ]
-[v _C1INTTbits C1INTTbits `VES270  1 e 1 @287 ]
-[s S245 . 1 `uc 1 EWARN 1 0 :1:0 
+[u S391 . 1 `S383 1 . 1 0 ]
+[v _C1INTTbits C1INTTbits `VES391  1 e 1 @287 ]
+[s S366 . 1 `uc 1 EWARN 1 0 :1:0 
 `uc 1 RXWARN 1 0 :1:1 
 `uc 1 TXWARN 1 0 :1:2 
 `uc 1 RXBP 1 0 :1:3 
@@ -551,8 +663,8 @@ TMR2_RESERVED_4 36
 `uc 1 TXBO 1 0 :1:5 
 ]
 "12179
-[u S252 . 1 `S245 1 . 1 0 ]
-[v _C1TRECUbits C1TRECUbits `VES252  1 e 1 @310 ]
+[u S373 . 1 `S366 1 . 1 0 ]
+[v _C1TRECUbits C1TRECUbits `VES373  1 e 1 @310 ]
 "13232
 [v _C1FIFOBA C1FIFOBA `VEul  1 e 4 @332 ]
 "13519
@@ -571,12 +683,66 @@ TMR2_RESERVED_4 36
 [v _C1FIFOCON1U C1FIFOCON1U `VEuc  1 e 1 @350 ]
 "14314
 [v _C1FIFOCON1T C1FIFOCON1T `VEuc  1 e 1 @351 ]
+[s S406 . 1 `uc 1 TFNRFNIF 1 0 :1:0 
+`uc 1 TFHRFHIF 1 0 :1:1 
+`uc 1 TFERFFIF 1 0 :1:2 
+`uc 1 RXOVIF 1 0 :1:3 
+`uc 1 TXATIF 1 0 :1:4 
+`uc 1 TXERR 1 0 :1:5 
+`uc 1 TXLARB 1 0 :1:6 
+`uc 1 TXABT 1 0 :1:7 
+]
+"14414
+[u S415 . 1 `S406 1 . 1 0 ]
+[v _C1FIFOSTA1Lbits C1FIFOSTA1Lbits `VES415  1 e 1 @352 ]
+"14819
+[v _C1FIFOCON2L C1FIFOCON2L `VEuc  1 e 1 @360 ]
+"14881
+[v _C1FIFOCON2H C1FIFOCON2H `VEuc  1 e 1 @361 ]
+"14913
+[v _C1FIFOCON2U C1FIFOCON2U `VEuc  1 e 1 @362 ]
+"14983
+[v _C1FIFOCON2T C1FIFOCON2T `VEuc  1 e 1 @363 ]
+"15083
+[v _C1FIFOSTA2Lbits C1FIFOSTA2Lbits `VES415  1 e 1 @364 ]
+"16150
+[v _C1FLTCON0L C1FLTCON0L `VEuc  1 e 1 @384 ]
+"16209
+[v _C1FLTCON0H C1FLTCON0H `VEuc  1 e 1 @385 ]
+"16865
+[v _C1FLTOBJ0L C1FLTOBJ0L `VEuc  1 e 1 @396 ]
+"16935
+[v _C1FLTOBJ0H C1FLTOBJ0H `VEuc  1 e 1 @397 ]
+"17011
+[v _C1FLTOBJ0U C1FLTOBJ0U `VEuc  1 e 1 @398 ]
+"17081
+[v _C1FLTOBJ0T C1FLTOBJ0T `VEuc  1 e 1 @399 ]
+"17152
+[v _C1MASK0L C1MASK0L `VEuc  1 e 1 @400 ]
+"17222
+[v _C1MASK0H C1MASK0H `VEuc  1 e 1 @401 ]
+"17298
+[v _C1MASK0U C1MASK0U `VEuc  1 e 1 @402 ]
+"17368
+[v _C1MASK0T C1MASK0T `VEuc  1 e 1 @403 ]
+"17439
+[v _C1FLTOBJ1L C1FLTOBJ1L `VEuc  1 e 1 @404 ]
+"17509
+[v _C1FLTOBJ1H C1FLTOBJ1H `VEuc  1 e 1 @405 ]
+"17585
+[v _C1FLTOBJ1U C1FLTOBJ1U `VEuc  1 e 1 @406 ]
+"17655
+[v _C1FLTOBJ1T C1FLTOBJ1T `VEuc  1 e 1 @407 ]
+"17726
+[v _C1MASK1L C1MASK1L `VEuc  1 e 1 @408 ]
+"17796
+[v _C1MASK1H C1MASK1H `VEuc  1 e 1 @409 ]
+"17872
+[v _C1MASK1U C1MASK1U `VEuc  1 e 1 @410 ]
+"17942
+[v _C1MASK1T C1MASK1T `VEuc  1 e 1 @411 ]
 "24216
 [v _RB1PPS RB1PPS `VEuc  1 e 1 @522 ]
-"24366
-[v _RB4PPS RB4PPS `VEuc  1 e 1 @525 ]
-"24966
-[v _CANRXPPS CANRXPPS `VEuc  1 e 1 @573 ]
 "29041
 [v _U1RXPPS U1RXPPS `VEuc  1 e 1 @626 ]
 "31475
@@ -597,31 +763,31 @@ TMR2_RESERVED_4 36
 [v _U1P3H U1P3H `VEuc  1 e 1 @682 ]
 "31732
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @683 ]
-[s S828 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1063 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "31765
-[s S833 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S1068 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S839 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S1074 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S844 . 1 `uc 1 MODE 1 0 :4:0 
+[s S1079 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S850 . 1 `S828 1 . 1 0 `S833 1 . 1 0 `S839 1 . 1 0 `S844 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES850  1 e 1 @683 ]
+[u S1085 . 1 `S1063 1 . 1 0 `S1068 1 . 1 0 `S1074 1 . 1 0 `S1079 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES1085  1 e 1 @683 ]
 "31860
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @684 ]
 "31940
@@ -636,7 +802,7 @@ TMR2_RESERVED_4 36
 [v _U1UIR U1UIR `VEuc  1 e 1 @689 ]
 "32315
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @690 ]
-[s S878 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S1113 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -646,7 +812,7 @@ TMR2_RESERVED_4 36
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "32342
-[s S887 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S1122 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -655,8 +821,8 @@ TMR2_RESERVED_4 36
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S896 . 1 `S878 1 . 1 0 `S887 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES896  1 e 1 @690 ]
+[u S1131 . 1 `S1113 1 . 1 0 `S1122 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES1131  1 e 1 @690 ]
 "32427
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @691 ]
 "38550
@@ -665,31 +831,31 @@ TMR2_RESERVED_4 36
 [v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
 "38942
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @794 ]
-[s S1146 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1443 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "38970
-[s S1152 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S1449 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "38970
-[s S1158 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1455 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
 "38970
-[u S1164 . 1 `S1146 1 . 1 0 `S1152 1 . 1 0 `S1158 1 . 1 0 ]
+[u S1461 . 1 `S1443 1 . 1 0 `S1449 1 . 1 0 `S1455 1 . 1 0 ]
 "38970
 "38970
-[v _T0CON0bits T0CON0bits `VES1164  1 e 1 @794 ]
+[v _T0CON0bits T0CON0bits `VES1461  1 e 1 @794 ]
 "39040
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @795 ]
 "40058
@@ -702,17 +868,17 @@ TMR2_RESERVED_4 36
 [v _PR2 PR2 `VEuc  1 e 1 @803 ]
 "40134
 [v _T2CON T2CON `VEuc  1 e 1 @804 ]
-[s S1538 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1907 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "40170
-[s S1542 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S1911 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
 "40170
-[s S1546 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S1915 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -721,7 +887,7 @@ TMR2_RESERVED_4 36
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
 "40170
-[s S1554 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1923 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -731,70 +897,70 @@ TMR2_RESERVED_4 36
 `uc 1 TMR2ON 1 0 :1:7 
 ]
 "40170
-[u S1563 . 1 `S1538 1 . 1 0 `S1542 1 . 1 0 `S1546 1 . 1 0 `S1554 1 . 1 0 ]
+[u S1932 . 1 `S1907 1 . 1 0 `S1911 1 . 1 0 `S1915 1 . 1 0 `S1923 1 . 1 0 ]
 "40170
 "40170
-[v _T2CONbits T2CONbits `VES1563  1 e 1 @804 ]
+[v _T2CONbits T2CONbits `VES1932  1 e 1 @804 ]
 "40280
 [v _T2HLT T2HLT `VEuc  1 e 1 @805 ]
-[s S1412 . 1 `uc 1 MODE 1 0 :5:0 
+[s S1781 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "40313
-[s S1417 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1786 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 `uc 1 MODE4 1 0 :1:4 
 ]
 "40313
-[s S1423 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S1792 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CKSYNC 1 0 :1:5 
 `uc 1 T2CKPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
 "40313
-[s S1428 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S1797 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
 "40313
-[u S1434 . 1 `S1412 1 . 1 0 `S1417 1 . 1 0 `S1423 1 . 1 0 `S1428 1 . 1 0 ]
+[u S1803 . 1 `S1781 1 . 1 0 `S1786 1 . 1 0 `S1792 1 . 1 0 `S1797 1 . 1 0 ]
 "40313
 "40313
-[v _T2HLTbits T2HLTbits `VES1434  1 e 1 @805 ]
+[v _T2HLTbits T2HLTbits `VES1803  1 e 1 @805 ]
 "40408
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @806 ]
 "40566
 [v _T2RST T2RST `VEuc  1 e 1 @807 ]
-[s S1500 . 1 `uc 1 RSEL 1 0 :5:0 
+[s S1869 . 1 `uc 1 RSEL 1 0 :5:0 
 ]
 "40593
-[s S1502 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S1871 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 `uc 1 RSEL4 1 0 :1:4 
 ]
 "40593
-[s S1508 . 1 `uc 1 T2RSEL 1 0 :5:0 
+[s S1877 . 1 `uc 1 T2RSEL 1 0 :5:0 
 ]
 "40593
-[s S1510 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S1879 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 `uc 1 T2RSEL4 1 0 :1:4 
 ]
 "40593
-[u S1516 . 1 `S1500 1 . 1 0 `S1502 1 . 1 0 `S1508 1 . 1 0 `S1510 1 . 1 0 ]
+[u S1885 . 1 `S1869 1 . 1 0 `S1871 1 . 1 0 `S1877 1 . 1 0 `S1879 1 . 1 0 ]
 "40593
 "40593
-[v _T2RSTbits T2RSTbits `VES1516  1 e 1 @807 ]
+[v _T2RSTbits T2RSTbits `VES1885  1 e 1 @807 ]
 "58452
 [v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
 "58514
@@ -825,7 +991,7 @@ TMR2_RESERVED_4 36
 [v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
 "59692
 [v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
-[s S589 . 1 `uc 1 IOCCP0 1 0 :1:0 
+[s S844 . 1 `uc 1 IOCCP0 1 0 :1:0 
 `uc 1 IOCCP1 1 0 :1:1 
 `uc 1 IOCCP2 1 0 :1:2 
 `uc 1 IOCCP3 1 0 :1:3 
@@ -835,11 +1001,11 @@ TMR2_RESERVED_4 36
 `uc 1 IOCCP7 1 0 :1:7 
 ]
 "59771
-[u S598 . 1 `S589 1 . 1 0 ]
+[u S853 . 1 `S844 1 . 1 0 ]
 "59771
 "59771
-[v _IOCCPbits IOCCPbits `VES598  1 e 1 @1045 ]
-[s S568 . 1 `uc 1 IOCCN0 1 0 :1:0 
+[v _IOCCPbits IOCCPbits `VES853  1 e 1 @1045 ]
+[s S823 . 1 `uc 1 IOCCN0 1 0 :1:0 
 `uc 1 IOCCN1 1 0 :1:1 
 `uc 1 IOCCN2 1 0 :1:2 
 `uc 1 IOCCN3 1 0 :1:3 
@@ -849,11 +1015,11 @@ TMR2_RESERVED_4 36
 `uc 1 IOCCN7 1 0 :1:7 
 ]
 "59833
-[u S577 . 1 `S568 1 . 1 0 ]
+[u S832 . 1 `S823 1 . 1 0 ]
 "59833
 "59833
-[v _IOCCNbits IOCCNbits `VES577  1 e 1 @1046 ]
-[s S547 . 1 `uc 1 IOCCF0 1 0 :1:0 
+[v _IOCCNbits IOCCNbits `VES832  1 e 1 @1046 ]
+[s S802 . 1 `uc 1 IOCCF0 1 0 :1:0 
 `uc 1 IOCCF1 1 0 :1:1 
 `uc 1 IOCCF2 1 0 :1:2 
 `uc 1 IOCCF3 1 0 :1:3 
@@ -863,15 +1029,15 @@ TMR2_RESERVED_4 36
 `uc 1 IOCCF7 1 0 :1:7 
 ]
 "59895
-[u S556 . 1 `S547 1 . 1 0 ]
+[u S811 . 1 `S802 1 . 1 0 ]
 "59895
 "59895
-[v _IOCCFbits IOCCFbits `VES556  1 e 1 @1047 ]
+[v _IOCCFbits IOCCFbits `VES811  1 e 1 @1047 ]
 "59940
 [v _WPUE WPUE `VEuc  1 e 1 @1057 ]
 "59961
 [v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
-[s S630 . 1 `uc 1 SWIE 1 0 :1:0 
+[s S885 . 1 `uc 1 SWIE 1 0 :1:0 
 `uc 1 HLVDIE 1 0 :1:1 
 `uc 1 OSFIE 1 0 :1:2 
 `uc 1 CSWIE 1 0 :1:3 
@@ -881,11 +1047,25 @@ TMR2_RESERVED_4 36
 `uc 1 IOCIE 1 0 :1:7 
 ]
 "65084
-[u S639 . 1 `S630 1 . 1 0 ]
+[u S894 . 1 `S885 1 . 1 0 ]
 "65084
 "65084
-[v _PIE0bits PIE0bits `VES639  1 e 1 @1182 ]
-[s S731 . 1 `uc 1 U1RXIE 1 0 :1:0 
+[v _PIE0bits PIE0bits `VES894  1 e 1 @1182 ]
+[s S1282 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+`uc 1 SPI1TXIE 1 0 :1:1 
+`uc 1 SPI1IE 1 0 :1:2 
+`uc 1 TMR2IE 1 0 :1:3 
+`uc 1 TMR1IE 1 0 :1:4 
+`uc 1 TMR1GIE 1 0 :1:5 
+`uc 1 CCP1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"65278
+[u S1291 . 1 `S1282 1 . 1 0 ]
+"65278
+"65278
+[v _PIE3bits PIE3bits `VES1291  1 e 1 @1185 ]
+[s S172 . 1 `uc 1 U1RXIE 1 0 :1:0 
 `uc 1 U1TXIE 1 0 :1:1 
 `uc 1 U1EIE 1 0 :1:2 
 `uc 1 U1IE 1 0 :1:3 
@@ -895,19 +1075,11 @@ TMR2_RESERVED_4 36
 `uc 1 PWM1IE 1 0 :1:7 
 ]
 "65340
-[u S740 . 1 `S731 1 . 1 0 ]
+[u S181 . 1 `S172 1 . 1 0 ]
 "65340
 "65340
-[v _PIE4bits PIE4bits `VES740  1 e 1 @1186 ]
-"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-[v _flags flags `i  1 s 2 flags ]
-[v _prec prec `i  1 s 2 prec ]
-[v _width width `i  1 s 2 width ]
-"66
-[v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
-"69
-[v _nout nout `i  1 s 2 nout ]
-"16 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\distance-sensor.c
+[v _PIE4bits PIE4bits `VES181  1 e 1 @1186 ]
+"16 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/distance-sensor.c
 [v _timerTicks timerTicks `us  1 e 2 0 ]
 "17
 [v _distanceReady distanceReady `uc  1 e 1 0 ]
@@ -921,243 +1093,251 @@ TMR2_RESERVED_4 36
 [v _counter counter `i  1 e 2 0 ]
 "22
 [v _toggle toggle `i  1 e 2 0 ]
-"103 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/can1.c
-[v _rxMsgData rxMsgData `[8]uc  1 s 8 rxMsgData ]
-[s S26 CAN1_RX_FIFO 2 `E22428 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
-"105
-[v _rxFifos rxFifos `VE[1]S26  1 s 2 rxFifos ]
+"99 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/can1.c
+[v _rxMsgData rxMsgData `VE[32]uc  1 s 32 rxMsgData ]
+[s S27 CAN1_RX_FIFO 2 `E22394 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
+"101
+[v _rxFifos rxFifos `VE[2]S27  1 s 4 rxFifos ]
+"108
+[v _DLC_BYTES DLC_BYTES `C[16]uc  1 s 16 DLC_BYTES ]
+"110
+[v _CAN1_FIFO1NotEmptyHandler CAN1_FIFO1NotEmptyHandler `*.38(v  1 s 3 CAN1_FIFO1NotEmptyHandler ]
 "111
-[v _DLC_BYTES DLC_BYTES `C[9]uc  1 s 9 DLC_BYTES ]
-"54 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/pin_manager.c
+[v _CAN1_FIFO2NotEmptyHandler CAN1_FIFO2NotEmptyHandler `*.38(v  1 s 3 CAN1_FIFO2NotEmptyHandler ]
+"54 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _IOCCF1_InterruptHandler IOCCF1_InterruptHandler `*.38(v  1 e 3 0 ]
 "55
 [v _IOCCF5_InterruptHandler IOCCF5_InterruptHandler `*.38(v  1 e 3 0 ]
-"64 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/uart1.c
+"60 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.38(v  1 e 3 0 ]
+"64 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/uart1.c
 [v _uart1RxHead uart1RxHead `VEuc  1 s 1 uart1RxHead ]
 "65
 [v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
 "66
 [v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
-[s S720 . 1 `uc 1 perr 1 0 :1:0 
+[s S973 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "67
-[u S725 . 1 `S720 1 . 1 0 `uc 1 status 1 0 ]
-[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S725  1 s 8 uart1RxStatusBuffer ]
+[u S978 . 1 `S973 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S978  1 s 8 uart1RxStatusBuffer ]
 "68
 [v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
 "69
-[v _uart1RxLastError uart1RxLastError `VES725  1 s 1 uart1RxLastError ]
+[v _uart1RxLastError uart1RxLastError `VES978  1 s 1 uart1RxLastError ]
 "74
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.38(v  1 e 3 0 ]
 "75
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.38(v  1 e 3 0 ]
 "76
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.38(v  1 e 3 0 ]
-"14 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\main.c
+"14 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "40
 } 0
-"24 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\distance-sensor.c
+"24 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/distance-sensor.c
 [v _sendTrigger sendTrigger `(v  1 e 1 0 ]
 {
 "29
 } 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+"5 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/printf.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "8
-[v printf@ap ap `[1]*.39v  1 a 2 110 ]
+[v printf@ap ap `[1]*.39v  1 a 2 158 ]
 "5
-[v printf@fmt fmt `*.32Cuc  1 p 2 102 ]
+[v printf@fmt fmt `*.32Cuc  1 p 2 22 ]
 "13
 } 0
-"1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+"1390 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
 "1393
-[v vfprintf@cfmt cfmt `*.32uc  1 a 2 87 ]
-[s S2100 _IO_FILE 0 ]
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 156 ]
+[s S2474 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.2S2100  1 p 2 96 ]
-[v vfprintf@fmt fmt `*.32Cuc  1 p 2 98 ]
-[v vfprintf@ap ap `*.39*.39v  1 p 2 100 ]
+[v vfprintf@fp fp `*.2S2474  1 p 2 16 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 18 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 20 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
 "697
-[v vfpfcnvrt@llu llu `uo  1 a 8 78 ]
+[v vfpfcnvrt@llu llu `uo  1 a 8 0 ]
 "698
-[v vfpfcnvrt@f f `d  1 a 4 88 ]
+[v vfpfcnvrt@f f `d  1 a 4 8 ]
 "694
-[v vfpfcnvrt@ct ct `[3]uc  1 a 3 92 ]
-[v vfpfcnvrt@c c `uc  1 a 1 95 ]
-[s S2100 _IO_FILE 0 ]
+[v vfpfcnvrt@ct ct `[3]uc  1 a 3 12 ]
+[v vfpfcnvrt@c c `uc  1 a 1 15 ]
+[s S2474 _IO_FILE 0 ]
 "692
-[v vfpfcnvrt@fp fp `*.2S2100  1 p 2 68 ]
-[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 70 ]
-[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 72 ]
+[v vfpfcnvrt@fp fp `*.2S2474  1 p 2 146 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 148 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 150 ]
 "1387
 } 0
 "615
 [v _utoa utoa `(i  1 s 2 utoa ]
 {
 "618
-[v utoa@n n `uo  1 a 8 54 ]
+[v utoa@n n `uo  1 a 8 51 ]
 "617
-[v utoa@i i `i  1 a 2 62 ]
-[v utoa@w w `i  1 a 2 52 ]
-[v utoa@p p `i  1 a 2 50 ]
-[s S2100 _IO_FILE 0 ]
+[v utoa@i i `i  1 a 2 59 ]
+[v utoa@w w `i  1 a 2 49 ]
+[v utoa@p p `i  1 a 2 47 ]
+[s S2474 _IO_FILE 0 ]
 "615
-[v utoa@fp fp `*.2S2100  1 p 2 32 ]
-[v utoa@d d `uo  1 p 8 34 ]
+[v utoa@fp fp `*.2S2474  1 p 2 29 ]
+[v utoa@d d `uo  1 p 8 31 ]
 "641
 } 0
-"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lomod.c
+"9 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/lomod.c
 [v ___lomod __lomod `(uo  1 e 8 0 ]
 {
 "12
-[v ___lomod@counter counter `uc  1 a 1 19 ]
+[v ___lomod@counter counter `uc  1 a 1 16 ]
 "9
-[v ___lomod@dividend dividend `uo  1 p 8 3 ]
-[v ___lomod@divisor divisor `uo  1 p 8 11 ]
+[v ___lomod@dividend dividend `uo  1 p 8 0 ]
+[v ___lomod@divisor divisor `uo  1 p 8 8 ]
 "27
 } 0
-"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lodiv.c
+"9 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/lodiv.c
 [v ___lodiv __lodiv `(uo  1 e 8 0 ]
 {
 "12
-[v ___lodiv@quotient quotient `uo  1 a 8 19 ]
+[v ___lodiv@quotient quotient `uo  1 a 8 16 ]
 "13
-[v ___lodiv@counter counter `uc  1 a 1 27 ]
+[v ___lodiv@counter counter `uc  1 a 1 24 ]
 "9
-[v ___lodiv@dividend dividend `uo  1 p 8 3 ]
-[v ___lodiv@divisor divisor `uo  1 p 8 11 ]
+[v ___lodiv@dividend dividend `uo  1 p 8 0 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 8 ]
 "32
 } 0
-"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+"3 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/strncmp.c
 [v _strncmp strncmp `(i  1 e 2 0 ]
 {
 "5
-[v strncmp@r r `*.32Cuc  1 a 2 12 ]
-[v strncmp@l l `*.39Cuc  1 a 2 10 ]
+[v strncmp@r r `*.32Cuc  1 a 2 9 ]
+[v strncmp@l l `*.39Cuc  1 a 2 7 ]
 "3
-[v strncmp@_l _l `*.39Cuc  1 p 2 3 ]
-[v strncmp@_r _r `*.32Cuc  1 p 2 5 ]
-[v strncmp@n n `ui  1 p 2 7 ]
+[v strncmp@_l _l `*.39Cuc  1 p 2 0 ]
+[v strncmp@_r _r `*.32Cuc  1 p 2 2 ]
+[v strncmp@n n `ui  1 p 2 4 ]
 "9
 } 0
-"332 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+"332 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
 [v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
 {
 "336
-[v efgtoa@u u `d  1 a 4 64 ]
-[v efgtoa@g g `d  1 a 4 56 ]
-[v efgtoa@l l `d  1 a 4 50 ]
-[v efgtoa@h h `d  1 a 4 46 ]
-[v efgtoa@ou ou `d  1 a 4 32 ]
+[v efgtoa@u u `d  1 a 4 142 ]
+[v efgtoa@g g `d  1 a 4 134 ]
+[v efgtoa@l l `d  1 a 4 128 ]
+[v efgtoa@h h `d  1 a 4 124 ]
+[v efgtoa@ou ou `d  1 a 4 110 ]
 "335
-[v efgtoa@n n `i  1 a 2 62 ]
-[v efgtoa@e e `i  1 a 2 60 ]
-[v efgtoa@i i `i  1 a 2 54 ]
-[v efgtoa@w w `i  1 a 2 42 ]
-[v efgtoa@p p `i  1 a 2 40 ]
-[v efgtoa@sign sign `i  1 a 2 38 ]
-[v efgtoa@d d `i  1 a 2 36 ]
-[v efgtoa@m m `i  1 a 2 30 ]
-[v efgtoa@ne ne `i  1 a 2 28 ]
-[v efgtoa@pp pp `i  1 a 2 26 ]
-[v efgtoa@t t `i  1 a 2 24 ]
+[v efgtoa@n n `i  1 a 2 140 ]
+[v efgtoa@e e `i  1 a 2 138 ]
+[v efgtoa@i i `i  1 a 2 132 ]
+[v efgtoa@w w `i  1 a 2 120 ]
+[v efgtoa@p p `i  1 a 2 118 ]
+[v efgtoa@sign sign `i  1 a 2 116 ]
+[v efgtoa@d d `i  1 a 2 114 ]
+[v efgtoa@m m `i  1 a 2 108 ]
+[v efgtoa@ne ne `i  1 a 2 106 ]
+[v efgtoa@pp pp `i  1 a 2 104 ]
+[v efgtoa@t t `i  1 a 2 102 ]
 "334
-[v efgtoa@mode mode `uc  1 a 1 45 ]
-[v efgtoa@nmode nmode `uc  1 a 1 44 ]
-[s S2100 _IO_FILE 0 ]
+[v efgtoa@mode mode `uc  1 a 1 123 ]
+[v efgtoa@nmode nmode `uc  1 a 1 122 ]
+[s S2474 _IO_FILE 0 ]
 "332
-[v efgtoa@fp fp `*.2S2100  1 p 2 0 ]
-[v efgtoa@f f `d  1 p 4 2 ]
-[v efgtoa@c c `uc  1 p 1 6 ]
+[v efgtoa@fp fp `*.2S2474  1 p 2 84 ]
+[v efgtoa@f f `d  1 p 4 86 ]
+[v efgtoa@c c `uc  1 p 1 90 ]
 "525
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/tolower.c
 [v _tolower tolower `(i  1 e 2 0 ]
 {
-[v tolower@c c `i  1 p 2 9 ]
+[v tolower@c c `i  1 p 2 6 ]
 "8
 } 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+"5 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/isupper.c
 [v _isupper isupper `(i  1 e 2 0 ]
 {
-[v isupper@c c `i  1 p 2 3 ]
+[v isupper@c c `i  1 p 2 0 ]
 "8
 } 0
-"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+"3 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/strcpy.c
 [v _strcpy strcpy `(*.39uc  1 e 2 0 ]
 {
 "6
-[v strcpy@d d `*.39uc  1 a 2 11 ]
+[v strcpy@d d `*.39uc  1 a 2 8 ]
 "5
-[v strcpy@s s `*.34Cuc  1 a 2 9 ]
+[v strcpy@s s `*.34Cuc  1 a 2 6 ]
 "3
-[v strcpy@dest dest `*.39uc  1 p 2 3 ]
-[v strcpy@src src `*.34Cuc  1 p 2 5 ]
+[v strcpy@dest dest `*.39uc  1 p 2 0 ]
+[v strcpy@src src `*.34Cuc  1 p 2 2 ]
 "9
 } 0
-"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+"72 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
 {
 "74
-[v pad@w w `i  1 a 2 30 ]
-[v pad@i i `i  1 a 2 28 ]
-[s S2100 _IO_FILE 0 ]
+[v pad@w w `i  1 a 2 27 ]
+[v pad@i i `i  1 a 2 25 ]
+[s S2474 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.2S2100  1 p 2 21 ]
-[v pad@buf buf `*.39uc  1 p 2 23 ]
-[v pad@p p `i  1 p 2 25 ]
+[v pad@fp fp `*.2S2474  1 p 2 18 ]
+[v pad@buf buf `*.39uc  1 p 2 20 ]
+[v pad@p p `i  1 p 2 22 ]
 "95
 } 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+"5 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 {
 "7
-[v strlen@a a `*.39Cuc  1 a 2 5 ]
+[v strlen@a a `*.39Cuc  1 a 2 2 ]
 "5
-[v strlen@s s `*.39Cuc  1 p 2 3 ]
+[v strlen@s s `*.39Cuc  1 p 2 0 ]
 "12
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+"8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
 {
 "11
-[v fputs@i i `i  1 a 2 19 ]
+[v fputs@i i `i  1 a 2 16 ]
 "10
-[v fputs@c c `uc  1 a 1 18 ]
+[v fputs@c c `uc  1 a 1 15 ]
 "8
-[v fputs@s s `*.39Cuc  1 p 2 14 ]
-[s S2084 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputs@fp fp `*.2S2084  1 p 2 16 ]
+[v fputs@s s `*.39Cuc  1 p 2 11 ]
+[u S2453 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S2456 _IO_FILE 11 `S2453 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.2S2456  1 p 2 13 ]
 "19
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+"8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
-[v fputc@c c `i  1 p 2 5 ]
-[s S2084 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputc@fp fp `*.2S2084  1 p 2 7 ]
+[v fputc@c c `i  1 p 2 2 ]
+[u S2453 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S2456 _IO_FILE 11 `S2453 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.2S2456  1 p 2 4 ]
 "24
 } 0
-"205 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/uart1.c
+"205 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/uart1.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@txData txData `uc  1 a 1 wreg ]
 [v putch@txData txData `uc  1 a 1 wreg ]
 "207
-[v putch@txData txData `uc  1 a 1 4 ]
+[v putch@txData txData `uc  1 a 1 1 ]
 "208
 } 0
 "191
@@ -1165,94 +1345,94 @@ TMR2_RESERVED_4 36
 {
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
-[v UART1_Write@txData txData `uc  1 a 1 3 ]
+[v UART1_Write@txData txData `uc  1 a 1 0 ]
 "198
 } 0
-"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
+"3 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S2238 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S2608 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S2238  1 a 4 83 ]
+[v floorf@u u `S2608  1 a 4 80 ]
 "7
-[v floorf@m m `ul  1 a 4 77 ]
+[v floorf@m m `ul  1 a 4 74 ]
 "6
-[v floorf@e e `i  1 a 2 81 ]
+[v floorf@e e `i  1 a 2 78 ]
 "3
-[v floorf@x x `f  1 p 4 67 ]
+[v floorf@x x `f  1 p 4 64 ]
 "4
-[v floorf@F527 F527 `S2238  1 s 4 F527 ]
+[v floorf@F526 F526 `S2608  1 s 4 F526 ]
 "27
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S2238 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S2608 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S2238  1 a 4 13 ]
+[v ___fpclassifyf@u u `S2608  1 a 4 10 ]
 "7
-[v ___fpclassifyf@e e `i  1 a 2 11 ]
+[v ___fpclassifyf@e e `i  1 a 2 8 ]
 "4
-[v ___fpclassifyf@x x `f  1 p 4 3 ]
+[v ___fpclassifyf@x x `f  1 p 4 0 ]
 "5
-[v ___fpclassifyf@F465 F465 `S2238  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S2608  1 s 4 F465 ]
 "11
 } 0
-"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+"43 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
-[v ___fltol@exp1 exp1 `uc  1 a 1 12 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 11 ]
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
 "43
-[v ___fltol@f1 f1 `d  1 p 4 3 ]
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
 "70
 } 0
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+"15 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
 {
-[v ___flneg@f1 f1 `d  1 p 4 3 ]
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
 "20
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
 {
-[v ___flge@ff1 ff1 `d  1 p 4 42 ]
-[v ___flge@ff2 ff2 `d  1 p 4 46 ]
+[v ___flge@ff1 ff1 `d  1 p 4 39 ]
+[v ___flge@ff2 ff2 `d  1 p 4 43 ]
 "19
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 {
-[v ___fleq@ff1 ff1 `d  1 p 4 3 ]
-[v ___fleq@ff2 ff2 `d  1 p 4 7 ]
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
 "12
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+"7 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 {
 "10
-[v ___awmod@sign sign `uc  1 a 1 8 ]
-[v ___awmod@counter counter `uc  1 a 1 7 ]
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
 "7
-[v ___awmod@dividend dividend `i  1 p 2 3 ]
-[v ___awmod@divisor divisor `i  1 p 2 5 ]
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
 "34
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+"7 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "10
-[v ___awdiv@quotient quotient `i  1 a 2 9 ]
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
 "11
-[v ___awdiv@sign sign `uc  1 a 1 8 ]
-[v ___awdiv@counter counter `uc  1 a 1 7 ]
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
 "7
-[v ___awdiv@dividend dividend `i  1 p 2 3 ]
-[v ___awdiv@divisor divisor `i  1 p 2 5 ]
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
 "41
 } 0
-"45 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\distance-sensor.c
+"45 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/distance-sensor.c
 [v _isDistanceReady isDistanceReady `(uc  1 e 1 0 ]
 {
 "51
@@ -1271,98 +1451,98 @@ TMR2_RESERVED_4 36
 [v _calculateDistance calculateDistance `(f  1 e 4 0 ]
 {
 "70
-[v calculateDistance@i i `i  1 a 2 81 ]
+[v calculateDistance@i i `i  1 a 2 78 ]
 "83
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+"10 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
 [v ___xxtofl@sign sign `uc  1 a 1 wreg ]
 "13
-[v ___xxtofl@arg arg `ul  1 a 4 13 ]
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
 "12
-[v ___xxtofl@exp exp `uc  1 a 1 12 ]
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
 "10
 [v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 3 ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
 "15
-[v ___xxtofl@sign sign `uc  1 a 1 11 ]
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
 } 0
-"245 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"245 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcadd.c
 [v ___flsub __flsub `(d  1 e 4 0 ]
 {
-[v ___flsub@b b `d  1 p 4 42 ]
-[v ___flsub@a a `d  1 p 4 46 ]
+[v ___flsub@b b `d  1 p 4 39 ]
+[v ___flsub@a a `d  1 p 4 43 ]
 "250
 } 0
 "10
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
-[v ___fladd@grs grs `uc  1 a 1 18 ]
+[v ___fladd@grs grs `uc  1 a 1 15 ]
 "15
-[v ___fladd@bexp bexp `uc  1 a 1 17 ]
+[v ___fladd@bexp bexp `uc  1 a 1 14 ]
 "16
-[v ___fladd@aexp aexp `uc  1 a 1 16 ]
+[v ___fladd@aexp aexp `uc  1 a 1 13 ]
 "13
-[v ___fladd@signs signs `uc  1 a 1 15 ]
+[v ___fladd@signs signs `uc  1 a 1 12 ]
 "10
-[v ___fladd@b b `d  1 p 4 3 ]
-[v ___fladd@a a `d  1 p 4 7 ]
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
 "237
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+"8 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1938 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2307 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1943 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S1946 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1938 1 fAsBytes 4 0 `S1943 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1946  1 a 4 36 ]
+[s S2312 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2315 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2307 1 fAsBytes 4 0 `S2312 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2315  1 a 4 33 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 31 ]
-[s S2014 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[v ___flmul@grs grs `ul  1 a 4 27 ]
+[s S2383 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2017 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2014 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2017  1 a 2 40 ]
+[u S2386 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2383 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2386  1 a 2 37 ]
 "10
-[v ___flmul@bexp bexp `uc  1 a 1 35 ]
+[v ___flmul@bexp bexp `uc  1 a 1 32 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 30 ]
+[v ___flmul@aexp aexp `uc  1 a 1 31 ]
 "9
-[v ___flmul@sign sign `uc  1 a 1 29 ]
+[v ___flmul@sign sign `uc  1 a 1 26 ]
 "8
-[v ___flmul@b b `d  1 p 4 17 ]
-[v ___flmul@a a `d  1 p 4 21 ]
+[v ___flmul@b b `d  1 p 4 14 ]
+[v ___flmul@a a `d  1 p 4 18 ]
 "205
 } 0
-"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+"11 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 {
 "21
-[v ___fldiv@grs grs `ul  1 a 4 61 ]
+[v ___fldiv@grs grs `ul  1 a 4 58 ]
 "22
-[v ___fldiv@rem rem `ul  1 a 4 54 ]
+[v ___fldiv@rem rem `ul  1 a 4 51 ]
 "20
-[v ___fldiv@new_exp new_exp `s  1 a 2 59 ]
+[v ___fldiv@new_exp new_exp `s  1 a 2 56 ]
 "19
-[v ___fldiv@aexp aexp `uc  1 a 1 66 ]
+[v ___fldiv@aexp aexp `uc  1 a 1 63 ]
 "18
-[v ___fldiv@bexp bexp `uc  1 a 1 65 ]
+[v ___fldiv@bexp bexp `uc  1 a 1 62 ]
 "16
-[v ___fldiv@sign sign `uc  1 a 1 58 ]
+[v ___fldiv@sign sign `uc  1 a 1 55 ]
 "11
-[v ___fldiv@b b `d  1 p 4 42 ]
-[v ___fldiv@a a `d  1 p 4 46 ]
+[v ___fldiv@b b `d  1 p 4 39 ]
+[v ___fldiv@a a `d  1 p 4 43 ]
 "185
 } 0
-"50 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/mcc.c
+"50 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "60
 } 0
-"82 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/uart1.c
+"82 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 {
 "148
@@ -1370,126 +1550,144 @@ TMR2_RESERVED_4 36
 "270
 [v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetRxInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 3 ]
+[v UART1_SetRxInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
 "272
 } 0
 "260
 [v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.38(v  1 p 3 3 ]
+[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.38(v  1 p 3 0 ]
 "262
 } 0
 "256
 [v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.38(v  1 p 3 3 ]
+[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.38(v  1 p 3 0 ]
 "258
 } 0
 "264
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.38(v  1 p 3 3 ]
+[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.38(v  1 p 3 0 ]
 "266
 } 0
-"62 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/tmr2.c
+"62 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "86
 } 0
-"60 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/tmr0.c
+"62 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
-"78
+"86
 } 0
-"76 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/mcc.c
+"135
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"137
+} 0
+"76 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "96
 } 0
-"58 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/pin_manager.c
+"58 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"143
+"141
 } 0
-"207
+"205
 [v _IOCCF5_SetInterruptHandler IOCCF5_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v IOCCF5_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 3 ]
-"209
+[v IOCCF5_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"207
 } 0
-"177
+"175
 [v _IOCCF1_SetInterruptHandler IOCCF1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v IOCCF1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 3 ]
-"179
+[v IOCCF1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"177
 } 0
-"62 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/mcc.c
+"62 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "74
 } 0
-"52 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/interrupt_manager.c
+"52 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "56
 } 0
-"177 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/can1.c
+"271 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/can1.c
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
 {
-"203
+"297
 } 0
-"144
+"221
 [v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
 {
-"158
+"235
 } 0
-"114
+"150
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
 {
-"116
-[v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 3 ]
-"122
+"152
+[v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 0 ]
+"158
 } 0
-"140
+"195
 [v _CAN1_RX_FIFO_FilterMaskConfiguration CAN1_RX_FIFO_FilterMaskConfiguration `(v  1 s 1 CAN1_RX_FIFO_FilterMaskConfiguration ]
 {
-"142
-} 0
-"124
-[v _CAN1_RX_FIFO_Configuration CAN1_RX_FIFO_Configuration `(v  1 s 1 CAN1_RX_FIFO_Configuration ]
-{
-"138
-} 0
-"205
-[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22355  1 e 1 0 ]
-{
-[v CAN1_OperationModeSet@requestMode requestMode `CE22345  1 a 1 wreg ]
-"207
-[v CAN1_OperationModeSet@status status `E22355  1 a 1 4 ]
-"208
-[v CAN1_OperationModeSet@opMode opMode `E22345  1 a 1 3 ]
-"205
-[v CAN1_OperationModeSet@requestMode requestMode `CE22345  1 a 1 wreg ]
-"207
-[v CAN1_OperationModeSet@requestMode requestMode `CE22345  1 a 1 5 ]
-"232
-} 0
-"234
-[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22345  1 e 1 0 ]
-{
-"237
+"219
 } 0
 "160
+[v _CAN1_RX_FIFO_Configuration CAN1_RX_FIFO_Configuration `(v  1 s 1 CAN1_RX_FIFO_Configuration ]
+{
+"193
+} 0
+"650
+[v _CAN1_SetFIFO2NotEmptyHandler CAN1_SetFIFO2NotEmptyHandler `(v  1 e 1 0 ]
+{
+[v CAN1_SetFIFO2NotEmptyHandler@handler handler `*.38(v  1 p 3 0 ]
+"653
+} 0
+"645
+[v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
+{
+[v CAN1_SetFIFO1NotEmptyHandler@handler handler `*.38(v  1 p 3 0 ]
+"648
+} 0
+"299
+[v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22364  1 e 1 0 ]
+{
+[v CAN1_OperationModeSet@requestMode requestMode `CE22354  1 a 1 wreg ]
+"301
+[v CAN1_OperationModeSet@status status `E22364  1 a 1 1 ]
+"302
+[v CAN1_OperationModeSet@opMode opMode `E22354  1 a 1 0 ]
+"299
+[v CAN1_OperationModeSet@requestMode requestMode `CE22354  1 a 1 wreg ]
+"301
+[v CAN1_OperationModeSet@requestMode requestMode `CE22354  1 a 1 2 ]
+"326
+} 0
+"328
+[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22354  1 e 1 0 ]
+{
+"331
+} 0
+"237
 [v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
 {
-"174
+"268
 } 0
-"58 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/interrupt_manager.c
+"58 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"73
+"81
 } 0
-"214 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/uart1.c
+"214 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/uart1.c
 [v _UART1_Receive_ISR UART1_Receive_ISR `(v  1 e 1 0 ]
 {
 "236
@@ -1512,37 +1710,60 @@ TMR2_RESERVED_4 36
 {
 "246
 } 0
-"145 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/pin_manager.c
+"122 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"132
+} 0
+"139
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"143
+[v TMR0_DefaultInterruptHandler@Transmit_Data Transmit_Data `[8]uc  1 a 8 29 ]
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+"142
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v TMR0_DefaultInterruptHandler@Transmission Transmission `S52  1 a 7 37 ]
+[v TMR0_DefaultInterruptHandler@F22304 F22304 `[8]uc  1 s 8 F22304 ]
+"155
+} 0
+"143 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
-"157
+"155
 } 0
-"192
+"190
 [v _IOCCF5_ISR IOCCF5_ISR `(v  1 e 1 0 ]
 {
-"202
+"200
 } 0
-"184
+"182
 [v _IOCCF1_DefaultInterruptHandler IOCCF1_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"187
+"185
 } 0
-"31 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\distance-sensor.c
+"31 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/distance-sensor.c
 [v _handleEcho handleEcho `(v  1 e 1 0 ]
 {
 "43
 } 0
-"214 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/pin_manager.c
+"212 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/pin_manager.c
 [v _IOCCF5_DefaultInterruptHandler IOCCF5_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"217
+"215
 } 0
-"162
+"160
 [v _IOCCF1_ISR IOCCF1_ISR `(v  1 e 1 0 ]
 {
-"172
+"170
 } 0
-"142 C:\Users\sahil\relectric\mcu-canbus-distance-sensor\mcc_generated_files/tmr2.c
+"142 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/tmr2.c
 [v _TMR2_WriteTimer TMR2_WriteTimer `(v  1 e 1 0 ]
 {
 [v TMR2_WriteTimer@timerVal timerVal `uc  1 a 1 wreg ]
@@ -1598,4 +1819,276 @@ TMR2_RESERVED_4 36
 "160
 [v TMR2_HasOverflowOccured@status status `a  1 a 1 0 ]
 "167
+} 0
+"656 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/can1.c
+[v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
+{
+"670
+} 0
+"131
+[v _DefaultFIFO2NotEmptyHandler DefaultFIFO2NotEmptyHandler `(v  1 s 1 DefaultFIFO2NotEmptyHandler ]
+{
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+"133
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v DefaultFIFO2NotEmptyHandler@InternalMessage InternalMessage `S52  1 a 7 38 ]
+"134
+[v DefaultFIFO2NotEmptyHandler@DataIndex DataIndex `uc  1 a 1 37 ]
+"148
+} 0
+"7 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/awdiv.c
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v i2___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v i2___awdiv@sign sign `uc  1 a 1 5 ]
+[v i2___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v i2___awdiv@dividend dividend `i  1 p 2 0 ]
+[v i2___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"444 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/can1.c
+[v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
+{
+"464
+[v CAN1_ReceivedMessageCountGet@fifoHead fifoHead `uc  1 a 1 8 ]
+"463
+[v CAN1_ReceivedMessageCountGet@fifoTail fifoTail `uc  1 a 1 7 ]
+"455
+[v CAN1_ReceivedMessageCountGet@fifoDepth fifoDepth `uc  1 a 1 6 ]
+[v CAN1_ReceivedMessageCountGet@numOfMsg numOfMsg `uc  1 a 1 3 ]
+"450
+[v CAN1_ReceivedMessageCountGet@channel channel `E22394  1 a 1 5 ]
+"451
+[v CAN1_ReceivedMessageCountGet@rxMsgStatus rxMsgStatus `E22444  1 a 1 4 ]
+"446
+[v CAN1_ReceivedMessageCountGet@index index `uc  1 a 1 9 ]
+[v CAN1_ReceivedMessageCountGet@totalMsgObj totalMsgObj `uc  1 a 1 2 ]
+"485
+} 0
+"409
+[v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
+{
+"411
+[v CAN1_Receive@index index `uc  1 a 1 35 ]
+"412
+[v CAN1_Receive@status status `a  1 a 1 34 ]
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+"409
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v CAN1_Receive@rxCanMsg rxCanMsg `*.39S52  1 p 2 32 ]
+"425
+} 0
+"377
+[v _Receive Receive `(a  1 s 1 Receive ]
+{
+[v Receive@index index `uc  1 a 1 wreg ]
+"384
+[v Receive@rxFifoObj rxFifoObj `*.39uc  1 a 2 28 ]
+"380
+[v Receive@rxMsgStatus rxMsgStatus `E22444  1 a 1 30 ]
+"379
+[v Receive@status status `a  1 a 1 27 ]
+"377
+[v Receive@index index `uc  1 a 1 wreg ]
+[v Receive@channel channel `E22394  1 p 1 22 ]
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v Receive@rxCanMsg rxCanMsg `*.39S52  1 p 2 23 ]
+"379
+[v Receive@index index `uc  1 a 1 31 ]
+"407
+} 0
+"343
+[v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
+{
+"345
+[v ReadMessageFromFifo@msgId msgId `ul  1 a 4 17 ]
+"346
+[v ReadMessageFromFifo@status status `uc  1 a 1 21 ]
+"343
+[v ReadMessageFromFifo@rxFifoObj rxFifoObj `*.39uc  1 p 2 11 ]
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v ReadMessageFromFifo@rxCanMsg rxCanMsg `*.39S52  1 p 2 13 ]
+"375
+} 0
+"338
+[v _GetRxFifoStatus GetRxFifoStatus `(E22444  1 s 1 GetRxFifoStatus ]
+{
+[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
+[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
+"340
+[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 0 ]
+"341
+} 0
+"333
+[v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
+{
+[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 wreg ]
+[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 wreg ]
+"335
+[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 1 ]
+"336
+} 0
+"113
+[v _DefaultFIFO1NotEmptyHandler DefaultFIFO1NotEmptyHandler `(v  1 s 1 DefaultFIFO1NotEmptyHandler ]
+{
+"116
+[v DefaultFIFO1NotEmptyHandler@Transmit_Data Transmit_Data `[8]uc  1 a 8 29 ]
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+"115
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v DefaultFIFO1NotEmptyHandler@Transmission Transmission `S52  1 a 7 37 ]
+[v DefaultFIFO1NotEmptyHandler@F22463 F22463 `[8]uc  1 s 8 F22463 ]
+"129
+} 0
+"589
+[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22369  1 e 1 0 ]
+{
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22391  1 a 1 wreg ]
+"591
+[v CAN1_TransmitFIFOStatusGet@status status `E22369  1 a 1 2 ]
+"589
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22391  1 a 1 wreg ]
+"591
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22391  1 a 1 3 ]
+"599
+} 0
+"567
+[v _CAN1_Transmit CAN1_Transmit `(E22348  1 e 1 0 ]
+{
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22391  1 a 1 wreg ]
+"576
+[v CAN1_Transmit@txFifoObj txFifoObj `*.39uc  1 a 2 25 ]
+"569
+[v CAN1_Transmit@status status `E22348  1 a 1 24 ]
+"567
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22391  1 a 1 wreg ]
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v CAN1_Transmit@txCanMsg txCanMsg `*.39S52  1 p 2 22 ]
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22391  1 a 1 27 ]
+"587
+} 0
+"487
+[v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
+{
+[v isTxChannel@channel channel `uc  1 a 1 wreg ]
+[v isTxChannel@channel channel `uc  1 a 1 wreg ]
+"489
+[v isTxChannel@channel channel `uc  1 a 1 1 ]
+"490
+} 0
+"497
+[v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
+{
+"499
+[v WriteMessageToFifo@msgId msgId `ul  1 a 4 18 ]
+"500
+[v WriteMessageToFifo@status status `uc  1 a 1 17 ]
+"497
+[v WriteMessageToFifo@txFifoObj txFifoObj `*.39uc  1 p 2 11 ]
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v WriteMessageToFifo@txCanMsg txCanMsg `*.39S52  1 p 2 13 ]
+"536
+} 0
+"4 /Applications/microchip/xc8/v2.36/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 8 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 6 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 10 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
+[v memcpy@n n `ui  1 p 2 4 ]
+"18
+} 0
+"538 /Users/faisal/MPLABXProjects/mcu-canbus-distance-sensor/mcc_generated_files/can1.c
+[v _ValidateTransmission ValidateTransmission `(E22348  1 s 1 ValidateTransmission ]
+{
+[v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
+[s S43 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+"541
+[u S49 . 1 `uc 1 msgfields 1 0 `S43 1 . 1 0 ]
+[v ValidateTransmission@field field `S49  1 a 1 11 ]
+"540
+[v ValidateTransmission@txMsgStatus txMsgStatus `E22348  1 a 1 10 ]
+"542
+[v ValidateTransmission@plsize plsize `uc  1 a 1 8 ]
+"538
+[v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
+[s S52 . 7 `ul 1 msgId 4 0 `S49 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v ValidateTransmission@txCanMsg txCanMsg `*.39S52  1 p 2 1 ]
+"540
+[v ValidateTransmission@validChannel validChannel `uc  1 a 1 9 ]
+"565
+} 0
+"328
+[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22354  1 e 1 0 ]
+{
+"331
+} 0
+"492
+[v _GetTxFifoStatus GetTxFifoStatus `(E22369  1 s 1 GetTxFifoStatus ]
+{
+[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
+[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
+"494
+[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 0 ]
+"495
 } 0

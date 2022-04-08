@@ -62,6 +62,14 @@ void __interrupt() INTERRUPT_InterruptManager (void)
     {
         UART1_RxInterruptHandler();
     }
+    else if(PIE3bits.TMR0IE == 1 && PIR3bits.TMR0IF == 1)
+    {
+        TMR0_ISR();
+    }
+    else if(PIE4bits.CANRXIE == 1 && PIR4bits.CANRXIF == 1)
+    {
+        CAN1_RXI_ISR();
+    }
     else if(PIE0bits.IOCIE == 1 && PIR0bits.IOCIF == 1)
     {
         PIN_MANAGER_IOC();

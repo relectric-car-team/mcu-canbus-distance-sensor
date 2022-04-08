@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\mcu-canbus-distance-sensor.production.hex">
+  <executable name="dist/default/production/mcu-canbus-distance-sensor.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>131072</length>
-      <used>15180</used>
-      <free>115892</free>
+      <used>18644</used>
+      <free>112428</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>13056</length>
-      <used>1383</used>
-      <free>11673</free>
+      <used>1474</used>
+      <free>11582</free>
     </memory>
   </executable>
 </project>
